@@ -8,5 +8,279 @@
 /* max-width */
 
 
+/* Media Query
+----------------------------------------------------------------------------- */
+
+@media all and (max-width: 2560px) {
+	.contact .content-wormholes {
+		margin-right: 480px;
+	}
+	.contact-content {
+		/* margin-right: 33.333%; */
+		margin-right: 25%;
+	}
+}
+
+@media all and (max-width: 1960px) {
+	.contact {
+	  padding: 0px 0px 6px 0px;
+	}
+	.contact .content-wormholes {
+		margin-right: 90px;
+	}
+}
+
+@media all and (max-width: 1630px) {
+  .contact img {
+	  width: 1500px;
+	  height: 500px;
+  }
+}
+
+@media all and (max-width: 1500px) {
+	.contact img {
+	  width: 1200px;
+	  height: 400px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .contact {
+    padding: 6px 0px 24px 0px;
+  }
+	.content-video iframe, .content-frames iframe, .content-frames object {
+		width: 700px;
+    height: 425px;
+	}
+	.content-frames p {
+		width: 700px;
+	}
+	.gallery-page-button a {
+		font-size: 14px;
+		width: 200px;
+		margin: 0px auto;
+		border: 1px solid #391a12;
+		color: #391a12;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.contact img {
+	  width: 1000px;
+	  height: 333px;
+  }
+
+  .thesis {
+    margin: 0 auto;
+  }
+  .thesis-statement {
+    width: 100%;
+  }
+  .thesis-pic {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0px;
+  }
+  .content {
+    width: 94%;
+    float: left;
+    padding: 3%;
+  }
+  .content-wormholes {
+		position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 16px;
+  }
+	.contact .content-wormholes {
+		margin-right: 0;
+	}
+	.content-bigscreen {
+		display: none;
+	}
+	.content-mobile {
+		display: block;
+	}
+	.contact-content {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contact img {
+	  width: 750px;
+	  height: 250px;
+  }
+	.thumbs {
+  	padding: 50px 0px 10px 0px;
+  }
+	.thumbs-inner {
+    width: 90%;
+    margin: auto;
+  }
+  .thumbs-inner ul li {
+		width: 40%;
+    margin: 18px;
+  }
+  .thumbs-inner ul li h4 {
+    font-size: 15px;
+  }
+  .thumbs-inner ul li h5 {
+    font-size: 12px;
+  }
+	input, input[type="password"], input[type="search"], textarea {
+	  width: 480px;
+	}
+  .lightbox span {
+    top: 40px;
+    right: 40px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .lightbox p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+	.content-video iframe, .content-frames iframe, .content-frames object {
+		width: 560px;
+    height: 340px;
+	}
+	.content-frames p {
+		width: 560px;
+	}
+  .contact {
+    padding: 0px 0px 24px 0px;
+  }
+  .contact iframe, .contact img {
+	  width: 375px;
+	  height: 125px;
+  }
+	.contact p {
+    text-align: center;
+    width: 90%;
+    padding: 12px 0px 12px 0px;
+    margin: 0 auto;
+  }
+	.content-title h1 {
+		font-size: 48px;
+	}
+	.content-title p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	textarea {
+	  width: 240px;
+	  height: 120px;
+	  font-size: 18px;
+	}
+	input, input[type="password"], input[type="search"] {
+		width: 240px;
+	  height: 30px;
+	  font-size: 18px;
+	}
+  .thesis-pic {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0px;
+  }
+	.thesis-pic img {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+  }
+	.thesis-statement {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.content-title h1 {
+		font-size: 42px;
+		text-align: center;
+		line-height: 28px;
+	}
+	.content-title p {
+		font-size: 15px;
+	}
+	.content {
+		width: 94%;
+		float: left;
+		padding: 3%;
+	}
+	.content-wormholes {
+		float: left;
+		width: 100%;
+		margin-top: 16px;
+	}
+	.content-video iframe, .content-frames iframe, .content-frames object {
+		width: 420px;
+		height: 255px;
+	}
+	.content-video p {
+		width: 420px;
+	  font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.content-title h1 {
+    font-size: 36px;
+	}
+	.content-title p {
+		font-size: 14px;
+	}
+	.thesis-statement p {
+		font-size: 14px;
+	}
+ .social iframe {
+    width: 200px;
+    height: 110px;
+  }
+  .contact iframe, .contact img {
+	  width: 300px;
+	  height: 100px;
+  }
+	.content-video h2 {
+		margin-top: 10px;
+	}
+	.thumbs-inner ul li {
+	  margin: 0px !important;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.content-video iframe, .content-frames iframe, .content-frames object {
+		width: 350px;
+		height: 212px;
+	}
+	.content-video p {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.contact p, .contact h1, .contact h4 {
+		width: 100%;
+	}
+	.content-title h1 {
+		font-size: 30px;
+	}
+	.content-title p {
+		font-size: 10px;
+	}
+	.content-video p {
+		width: 280px;
+	}
+	.content-video iframe, .content-frames iframe, .content-frames object {
+		width: 280px;
+		height: 191px;
+	}
+}
+
+
 /* End
 ----------------------------------------------------------------------------- */

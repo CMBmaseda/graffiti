@@ -7,29 +7,29 @@
 ?>
 
 
-  <div class="site-footer">
-    <div class="inner-site-footer">
-      <p class="">COPYRIGHT &copy; <?php echo date('Y'); ?> ALL RIGHTS RESERVED</p>
-    </div><!-- .inner-site-footer -->
-  </div><!-- .site-footer -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script>
-jQuery('.lifestyle-group').each(function(index, element) {
-  jQuery(element).find('.lifestyle-page-mobile-dropdown').click(function(e) {
-    $content = jQuery(element).find('.lifestyle-content');
-    // console.log($content);
-    $content.toggleClass('expanded');
-    $arrow = jQuery(element).find('.lifestyle-arrow');
-    // console.log($content);
-    $arrow.toggleClass('rotated');
-  });
-});
-</script>
+<div class="social">
+  <p class="">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>.&nbsp; ALL RIGHTS RESERVED</p>
+  <ul class="icons">
+    <li><a href="https://www.facebook.com/" target= "_blank" rel="bookmark" title="Facebook" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href="https://www.instagram.com/" target= "_blank" rel="bookmark" title="Instagram" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://www.twitter.com/" target= "_blank" rel="bookmark" title="Twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://www.youtube.com/" target= "_blank" rel="bookmark" title="Youtube" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+    <li>
+     <a href="tel:555-555-5555" title="phone">
+       <i class="icon fa-phone" aria-hidden="true"></i>
+     </a>
+    </li>
+    <li>
+     <a href="mailto:person@example.com" title="email">
+       <i class="icon fa-envelope" aria-hidden="true"></i>
+     </a>
+    </li>
+  </ul><!-- icons -->
+</div><!-- social -->
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/theme.js"></script>
 
 
 <?php wp_footer(); ?>
