@@ -239,7 +239,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   height: 500px;
 }
 .headline h1 {
-	color: #FFFFFF;
+	/* color: #FFFFFF; */
   font-size: 60px;
 	font-family: 'Abril Fatface', cursive;
 	font-weight: 700;
@@ -258,12 +258,19 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	width: 1500px;
   height: 500px;
 	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	background: rgba(0, 0, 0, 0.4);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	cursor: -webkit-grabbing;
+	cursor: none;
+	color: #FFFFFF;
+	background: rgba(0, 0, 0, 0.4);
+}
+.headline-overlay:hover {
+	color: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 }
 
 .wrapper {
@@ -327,9 +334,9 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	   -moz-filter: saturate(110%);
 				  filter: saturate(110%);
 	-webkit-animation: mymove 5s;  /* Safari 4.0 - 8.0 */
-	-webkit-animation-iteration-count: 1; // infinite /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
 	animation: mymove 5s;
-	animation-iteration-count: 1; // infinite
+	animation-iteration-count: 1;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
@@ -473,7 +480,7 @@ a.wormholes:hover, a.wormholes li:hover {
 }
 .thumbs-inner ul li a {
   text-decoration: none;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   width: 100%;
@@ -520,7 +527,7 @@ a.wormholes:hover, a.wormholes li:hover {
 }
 .thumbs-inner ul li h5:hover, .thumbs-inner ul li h4:hover {
 	text-decoration: none;
-  cursor: pointer;
+  cursor: zoom-in;
 	color: #a1c5c3;
 }
 
@@ -540,7 +547,7 @@ a.wormholes:hover, a.wormholes li:hover {
 	top: 0;
 	left: 0;
   z-index: 1;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 }
 .lightbox img {
   width: 100%;
@@ -583,6 +590,7 @@ a.lightbox {
 .lightbox:target {
 	outline: none; /* Remove default browser outline */
 	display: block;
+	cursor: zoom-out;
 }
 
 

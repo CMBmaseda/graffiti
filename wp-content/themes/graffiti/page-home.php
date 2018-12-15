@@ -36,7 +36,7 @@
           <div class="thesis group">
             <div class="thesis-pic">
               <a href="#/" title="">
-                <img src="<?php echo get_template_directory_uri() . '/images/rps.jpg'; ?>" />
+                <img src="<?php echo get_template_directory_uri() . '/images/rps.jpg'; ?>" alt="Click to play a quick game of rock, paper, scissors" title="Click to play a quick game of rock, paper, scissors"/>
               </a>
             </div><!-- thesis-pic -->
             <div class="thesis-statement">
