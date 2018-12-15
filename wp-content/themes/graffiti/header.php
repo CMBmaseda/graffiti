@@ -19,7 +19,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="//fast.fonts.net/jsapi/1504234f-c647-4850-97c8-bb98b8733769.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Quicksand' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Quicksand' rel='stylesheet' type='text/css'>
 
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />

@@ -4,59 +4,6 @@ Author: Anthony Maseda
 */
 
 
-/* Reset
------------------------------------------------------------------------------ */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 /* Extra Reset
 ----------------------------------------------------------------------------- */
 
@@ -65,15 +12,12 @@ table {
 .group > * { float: left; min-height: 1px; }
 .group.right > * { float: right; }
 
-.clearfix {clear: both;}
-
 
 /* Global
 ----------------------------------------------------------------------------- */
 
 html {
-	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 0.99)), to(rgba(57, 1, 23, 0.99)))
-	/* background: rgba(57, 1, 23, 0.99); */
+	background: rgba(57, 1, 23, 1);
 }
 
 body {
@@ -81,7 +25,7 @@ body {
 	line-height: 1.7;
   color: #FFFFFF;
   font-family: 'Quicksand';
-	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 0.99)), to(rgba(57, 1, 23, 0.99)))
+	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(57, 1, 23, 1)))
 }
 
 div {
@@ -109,7 +53,7 @@ h2 {font-size: 36px; margin-top:18px; margin-bottom: 18px;}
 h3 {font-size: 30px; margin-bottom: 12px;}
 h4 {font-size: 24px; margin-bottom: 12px;}
 h5 {font-size: 21px; margin-bottom: 12px;}
-h6 {font-size: 18px; margin-top:18px; margin-bottom: 12px;}
+h6 {font-size: 18px; margin-top:12px; margin-bottom: 12px;}
 p {font-size: 18px; margin-bottom: 12px;}
 span {font-size:18px; margin-bottom: 12px;}
 
@@ -119,19 +63,19 @@ span {font-size:18px; margin-bottom: 12px;}
 
 input, input[type="password"], input[type="search"] {
   -webkit-appearance: textfield;
-	background: #FFFFFF;
-  color: rgba(23, 1, 23, 0.99);
   width: 600px;
   height: 40px;
+	padding: 5px;
+  margin-top: 2px;
+	margin-bottom: 20px;
   cursor: auto;
   font-size: 20px;
   font-weight: 500;
   outline: none;
-  border: 1px solid rgba(23, 1, 23, 0.99);
+  border: 1px solid rgba(23, 1, 23, 1);
   border-radius: 3px;
-	padding: 5px;
-  margin-top: 2px;
-	margin-bottom: 20px;
+	color: rgba(23, 1, 23, 1);
+	background: #FFFFFF;
 }
 
 input[type=submit] {
@@ -146,8 +90,7 @@ input[type=submit]:hover {
 	border: 1px solid #FFFFFF;
   -webkit-border-radius: 0;
 	color: #FFFFFF;
-	/* background: rgba(23, 1, 23, 0.15); */
-	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 0.99)), to(rgba(57, 1, 23, 0.99)))
+	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(57, 1, 23, 1)))
 }
 
 input[type="button"]:disabled,
@@ -159,18 +102,18 @@ input[type="reset"]:disabled
 
 input[type=checkbox] {
   -webkit-appearance: checkbox;
-  background-color: #FFFFFF;
-  height: 14px;
   width: 14px;
+	height: 14px;
+	background-color: #FFFFFF;
 }
 
 input[type=file] {
   -webkit-appearance: file;
-  background-color: rgba(0,0,0,0);
-  color: #FFFFFF;
-  width: 90px;
+	width: 90px;
   height: 30px;
   margin: auto;
+  color: #FFFFFF;
+	background-color: rgba(0,0,0,0);
 }
 
 .radio, .checkbox {
@@ -189,29 +132,20 @@ textarea {
 	-webkit-border-radius: 0;
   width: 600px;
   height: 240px;
+	padding: 10px;
+  margin-top: 2px;
+	margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
   border:none;
   outline:none;
-  background: #FFFFFF;
-  color: rgba(23, 1, 23, 0.99);
-	padding: 10px;
-  margin-top: 2px;
-	margin-bottom: 20px;
+  color: rgba(23, 1, 23, 1);
+	background: #FFFFFF;
 }
 
 div.wpcf7 .ajax-loader {
 	width: 0px !important;
 	margin: 0px !important;
-  /* visibility: hidden;
-  display: inline-block;
-  background-image: url(../../images/ajax-loader.gif);
-  width: 16px;
-  height: 16px;
-  border: none;
-  padding: 0;
-  margin: 0 0 0 4px;
-  vertical-align: middle; */
 }
 
 .notice, .alert, #error_explanation {
@@ -285,10 +219,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   text-align: center;
   margin: auto;
 }
-.contact img {
-  width: 1500px;
-  height: 500px;
-}
 .contact p, .contact h1, .contact h4, .thumbs p {
   text-align: center;
   width: 60%;
@@ -296,10 +226,45 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   margin: 0 auto;
 }
 .contact-content {
-	/* margin-right: 33.333%; */
 	margin-right: 0;
 }
 
+
+.headline {
+	position: relative;
+	text-align: center;
+}
+.headline img {
+  width: 1500px;
+  height: 500px;
+}
+.headline h1 {
+	color: #FFFFFF;
+  font-size: 60px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 700;
+  letter-spacing: 1px;
+	word-spacing: 12px;
+}
+.headline p {
+  font-size: 18px;
+	font-weight: 500;
+  line-height: 150%;
+}
+.headline-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1500px;
+  height: 500px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 .wrapper {
   width: 91%;
@@ -319,28 +284,29 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   width: fit-content;
-	min-width: 36px;
+  min-width: 30px;
   margin: 6px auto;
   padding: 12px;
-  border: 1px solid rgba(57, 1, 23, 0.99);
-  color: rgba(57, 1, 23, 0.99);
-  background: #a1c5c3;
+  border: 1px solid rgba(57, 1, 23, 1);
+  border-radius: 16.666%;
+  color: rgba(57, 1, 23, 1);
+  background: #FFFFFF;
 }
 
-.content-title ul, .contact-content ul {
+.content-title ul, .headline ul {
   list-style: none;
   padding-left: 0;
 }
-.content-title ul li, .contact-content ul li {
+.content-title ul li, .headline ul li {
   text-transform: uppercase;
   display: inline-flex;
   margin: 12px 12px;
 }
 
 .thesis {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 16px;
 }
@@ -395,26 +361,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   display: block;
 }
 .content-container {margin-top: 32px;}
-.content-title {
-  border-top: none;
-  border-bottom: none;
-  display: block;
-  padding: 18px 0px 18px 0px;
-  text-align: center;
-}
-.content-title h1 {
-  font-size: 60px;
-	font-family: 'Bungee Shade';
-	font-weight: 600;
-  line-height: 150%;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.content-title p {
-  font-size: 18px;
-	font-weight: 500;
-  line-height: 150%;
-}
 
 .content-bigscreen {
 	display: block;
@@ -429,6 +375,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   /* float: right; */
   width: 22.5%;
 	margin-bottom: 7%;
+	text-align: left;
 }
 .contact .content-wormholes {
 	margin-right: 0;
@@ -445,7 +392,6 @@ a.wormholes:hover, a.wormholes li:hover {
   color: #FFFFFF;
 }
 .content-wormholes h5 {
-  line-height: 22px;
   font-weight: 500;
   font-size: 18px;
 }
@@ -491,7 +437,6 @@ a.wormholes:hover, a.wormholes li:hover {
 }
 .content-frames h2, .content-video h2, .thumbs h2 {
   margin-top: 72px;
-	font-family: 'Indie Flower';
 }
 .content-frames p {
 	margin: 0 auto;
@@ -572,14 +517,6 @@ a.wormholes:hover, a.wormholes li:hover {
 	height: auto;
   text-align: left;
   font-size: 14px;
-}
-.thumbs-inner ul li h4 {
-  color: #fff;
-  width: 90%;
-	height: auto;
-  text-align: left;
-  font-size: 18px;
-  margin: 3px 0px;
 }
 .thumbs-inner ul li h5:hover, .thumbs-inner ul li h4:hover {
 	text-decoration: none;

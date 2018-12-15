@@ -14,7 +14,24 @@
             $background_image = get_template_directory_uri() . '/images/Graffiti.jpg';
           }
         ?>
-        <img src="<?php echo $background_image ?>" />
+        <div class="headline">
+          <img src="<?php echo $background_image ?>" />
+          <div class="headline-overlay">
+            <h1><?php the_title(); ?></h1>
+          </div><!-- .hero-overlay -->
+          <ul>
+            <li>
+              <div class="page-theme-button page-theme-moon-button">
+                <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+              </div>
+            </li>
+            <li>
+              <div class="page-theme-button disabled page-theme-lightbulb-button">
+                <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div><!-- .headline  -->
 
         <div class="content-wormholes content-bigscreen">
           <ul>
@@ -34,19 +51,6 @@
         </div><!-- content-wormholes content-bigscreen -->
 
         <div class="contact-content">
-          <h1><?php the_title(); ?></h1>
-          <ul>
-            <li>
-              <div class="page-theme-button page-theme-moon-button">
-                <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
-              </div>
-            </li>
-            <li>
-              <div class="page-theme-button disabled page-theme-lightbulb-button">
-                <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-              </div>
-            </li>
-          </ul>
           <div><?php the_content(); ?></div>
         </div><!-- .contact-content -->
 

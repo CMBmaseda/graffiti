@@ -3,7 +3,4 @@
 ----------------------------------------------------------------------------- */
 
 
-// function testFiring() {
-// 	console.log('main.js firing');
-// }
-// testFiring();
+// console.log('main.js firing');
