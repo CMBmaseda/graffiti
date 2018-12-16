@@ -169,9 +169,6 @@
 	.headline h1 {
 		font-size: 40px;
 		word-spacing: 6px;
-}
-	.headline p {
-		font-size: 16px;
 	}
 }
 
@@ -205,9 +202,6 @@
 		font-size: 42px;
 		text-align: center;
 	}
-	.headline p {
-		font-size: 15px;
-	}
 	.content {
 		width: 94%;
 		float: left;
@@ -235,9 +229,6 @@
 @media screen and (max-width: 480px) {
 	.headline h1 {
     font-size: 36px;
-	}
-	.headline p {
-		font-size: 14px;
 	}
 	.thesis-statement p {
 		font-size: 14px;
@@ -285,9 +276,6 @@
 	}
 	.headline h1 {
 		font-size: 30px;
-	}
-	.headline p {
-		font-size: 10px;
 	}
 	.content-video p {
 		width: 280px;

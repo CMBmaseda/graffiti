@@ -244,11 +244,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   letter-spacing: 1px;
 	word-spacing: 12px;
 }
-.headline p {
-  font-size: 18px;
-	font-weight: 500;
-  line-height: 150%;
-}
 .headline-overlay {
 	position: absolute;
 	left: 50%;
@@ -330,10 +325,10 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	-webkit-filter: saturate(110%);
 	   -moz-filter: saturate(110%);
 				  filter: saturate(110%);
-	-webkit-animation: mymove 5s;  /* Safari 4.0 - 8.0 */
-	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
-	animation: mymove 5s;
-	animation-iteration-count: 1;
+	-webkit-animation: mymove 9s;  /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+	animation: mymove 9s;
+	animation-iteration-count: 2; /* infinite */
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
