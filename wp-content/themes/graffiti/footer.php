@@ -10,20 +10,30 @@
 <div class="social">
   <p class="">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>.&nbsp; ALL RIGHTS RESERVED</p>
   <ul class="icons">
-    <li><a href="https://www.facebook.com/" target= "_blank" rel="bookmark" title="Facebook" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-    <li><a href="https://www.instagram.com/" target= "_blank" rel="bookmark" title="Instagram" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-    <li><a href="https://www.twitter.com/" target= "_blank" rel="bookmark" title="Twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href="https://www.youtube.com/" target= "_blank" rel="bookmark" title="Youtube" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-    <li>
-     <a href="tel:555-555-5555" title="phone">
-       <i class="icon fa-phone" aria-hidden="true"></i>
-     </a>
-    </li>
-    <li>
-     <a href="mailto:person@example.com" title="email">
-       <i class="icon fa-envelope" aria-hidden="true"></i>
-     </a>
-    </li>
+    <?php if ( is_active_sidebar( 'sidebar-facebook' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-facebook' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-instagram' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-instagram' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-twitter' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-twitter' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-youtube' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-youtube' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-github' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-github' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-linkedin' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-linkedin' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-phone' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-phone' ); ?>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-email' ) ) : ?>
+    	<?php dynamic_sidebar( 'sidebar-email' ); ?>
+    <?php endif; ?>
   </ul><!-- icons -->
 </div><!-- social -->
 

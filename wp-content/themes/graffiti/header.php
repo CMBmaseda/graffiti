@@ -28,4 +28,9 @@
 
 <body <?php body_class(); ?>>
 
-<!-- Insert Google Analytics -->
+<!-- Insert Analytics -->
+<script>
+<?php if ( is_active_sidebar( 'sidebar-analytics' ) ) : ?>
+  <?php dynamic_sidebar( 'sidebar-analytics' ); ?>
+<?php endif; ?>
+</script>
