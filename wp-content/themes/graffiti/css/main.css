@@ -17,7 +17,7 @@ Author: Anthony Maseda
 ----------------------------------------------------------------------------- */
 
 html {
-	background: rgba(57, 1, 23, 1);
+	background: rgba(46, 1, 23, 1);
 }
 
 body {
@@ -25,7 +25,8 @@ body {
 	line-height: 1.7;
   color: #FFFFFF;
   font-family: 'Quicksand';
-	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(57, 1, 23, 1)))
+	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))
+	/* background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(1, 1, 1, 1)), to(rgba(255, 255, 255, 1))) */
 }
 
 div {
@@ -90,7 +91,8 @@ input[type=submit]:hover {
 	border: 1px solid #FFFFFF;
   -webkit-border-radius: 0;
 	color: #FFFFFF;
-	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(57, 1, 23, 1)))
+	background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))
+	/* background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(1, 1, 1, 1)), to(rgba(255, 255, 255, 1))) */
 }
 
 input[type="button"]:disabled,
@@ -146,10 +148,6 @@ textarea {
 div.wpcf7 .ajax-loader {
 	width: 0px !important;
 	margin: 0px !important;
-}
-
-.notice, .alert, #error_explanation {
-	color: #ffda2a;
 }
 
 
@@ -253,11 +251,10 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .headline-overlay {
 	position: absolute;
-	left: 0;
+	left: 50%;
 	top: 0;
 	width: 1500px;
   height: 500px;
-	left: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -296,9 +293,9 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   min-width: 30px;
   margin: 6px auto;
   padding: 12px;
-  border: 1px solid rgba(57, 1, 23, 1);
+  border: 1px solid rgba(46, 1, 23, 1);
   border-radius: 16.666%;
-  color: rgba(57, 1, 23, 1);
+  color: rgba(46, 1, 23, 1);
   background: #FFFFFF;
 }
 

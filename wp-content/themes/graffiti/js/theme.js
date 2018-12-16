@@ -105,11 +105,11 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "rgba(255, 255, 255, 0.9)");
     })
   );
-  $(".content-wormholes li").css("background", "-webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 0.99)), to(rgba(57, 1, 23, 0.99)))");
+  $(".content-wormholes li").css("background", "-webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))");
   $('input[type=submit]').hover((function() {
     $(this).css("color", "#FFFFFF");
   }), (function() {
-    $(this).css("color", "rgba(23, 1, 23, 0.99)");
+    $(this).css("color", "rgba(23, 1, 23, 1)");
     })
   );
 });
