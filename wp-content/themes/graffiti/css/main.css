@@ -379,34 +379,25 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   /* float: right; */
   width: 22.5%;
 	margin-bottom: 7%;
-	text-align: left;
+	text-align: center;
 }
 .contact .content-wormholes {
 	margin-right: 0;
 }
-a.wormholes:hover, a.wormholes li:hover {
-	text-decoration: none;
-	background-color: rgba(255,255,255,0.15);
-	-moz-transition: color ease-in-out .1s, background-color ease-in-out .1s;
-	-webkit-transition: color ease-in-out .1s, background-color ease-in-out .1s;
-	transition: color ease-in-out .1s, background-color ease-in-out .1s;
-}
 .content-wormholes a {
   text-decoration: none;
+	font-weight: 500;
+  font-size: 20px;
   color: #FFFFFF;
 }
-.content-wormholes h5 {
-  font-weight: 500;
-  font-size: 18px;
-}
-.content-wormholes h6 {
-	font-size: 14px;
+.content-wormholes a:hover {
+  text-decoration: underline;
 }
 .content-wormholes ul {}
 .content-wormholes li {
   list-style-type: none;
-  margin: 9px;
-  padding: 9px;
+  margin: 18px;
+  padding: 18px;
   display: block;
   background-color: rgba(255,255,255,0.1);
 }

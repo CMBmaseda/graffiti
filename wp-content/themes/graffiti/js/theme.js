@@ -94,15 +94,12 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   );
   $("textarea").css("border", "1px solid rgba(23, 1, 23, 1);");
   $("textarea").css("color", "rgba(23, 1, 23, 1)");
-  $(".notice, .alert, #error_explanation").css("color", "rgba(23, 1, 23, 1)");
   $("ul.icons li .icon").css("color", "rgba(23, 1, 23, 1)");
   $(".content-wormholes a").css("color", "rgba(255, 255, 255, 0.9)");
   $('.content-wormholes a').hover((function() {
-    $(this).css("text-decoration", "underline");
-    $(this).css("color", "rgba(255, 255, 255, 0.9)");
+    $(this).css("color", "#FFFFFF");
   }), (function() {
-    $(this).css("text-decoration", "none");
-    $(this).css("color", "rgba(255, 255, 255, 0.9)");
+    $(this).css("color", "#FFFFFF");
     })
   );
   $(".content-wormholes li").css("background", "-webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))");

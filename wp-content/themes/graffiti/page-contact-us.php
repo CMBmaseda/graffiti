@@ -34,20 +34,13 @@
         </div><!-- .headline  -->
 
         <div class="content-wormholes content-bigscreen">
-          <ul>
-            <a class="wormholes" href="/home" rel="bookmark" title="home">
-              <li>
-                <h5>Home</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-            <a class="wormholes" href="/contact-us" rel="bookmark" title="">
-              <li>
-                <h5>Contact</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-         </ul>
+          <!-- Primary Nav -->
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'primary_nav',
+              'container_class' => ''
+            ) );
+          ?>
         </div><!-- content-wormholes content-bigscreen -->
 
         <div class="contact-content">
@@ -57,20 +50,13 @@
         <!-- <h3><div class="breadcrumb"><?php //get_breadcrumb(); ?></h3> -->
 
         <div class="content-wormholes content-mobile">
-          <ul>
-            <a class="wormholes" href="/home" rel="bookmark" title="home">
-              <li>
-                <h5>Home</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-            <a class="wormholes" href="/contact-us" rel="bookmark" title="">
-              <li>
-                <h5>Contact</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-          </ul>
+          <!-- Mobile Nav -->
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'mobile_nav',
+              'container_class' => ''
+            ) );
+          ?>
         </div><!-- content-wormholes content-mobile -->
 
 

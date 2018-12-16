@@ -48,21 +48,14 @@
 
       <div class="content-container">
         <div class="content-wormholes content-bigscreen">
-          <ul>
-            <a class="wormholes" href="/home" rel="bookmark" title="home">
-              <li>
-                <h5>Home</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-            <a class="wormholes" href="/contact-us" rel="bookmark" title="contact-us">
-              <li>
-                <h5>Contact</h5>
-                <h6>Static SubTitle</h6>
-              </li>
-            </a>
-         </ul>
-       </div><!-- content-wormholes content-bigscreen -->
+          <!-- Primary Nav -->
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'primary_nav',
+              'container_class' => ''
+            ) );
+          ?>
+        </div><!-- content-wormholes content-bigscreen -->
         <div class="content">
           <div class="content-video">
             <h2>Static <a href="#/" title="">Link</a></h2>
@@ -189,20 +182,13 @@
 
 
       <div class="content-wormholes content-mobile">
-        <ul>
-          <a class="wormholes" href="/home" rel="bookmark" title="home">
-            <li>
-              <h5>Home</h5>
-              <h6>Static SubTitle</h6>
-            </li>
-          </a>
-          <a class="wormholes" href="/contact-us" rel="bookmark" title="">
-            <li>
-              <h5>Contact</h5>
-              <h6>Static SubTitle</h6>
-            </li>
-          </a>
-       </ul>
+        <!-- Mobile Nav -->
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'mobile_nav',
+            'container_class' => ''
+          ) );
+        ?>
       </div><!-- content-wormholes content-mobile -->
 
 
