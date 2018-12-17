@@ -79,3 +79,7 @@
   include ( TEMPLATEPATH . '/lib/email-widget.php' );
 
   include ( TEMPLATEPATH . '/lib/analytics-widget.php' );
+
+
+  // Load the custom post types.
+  include ( TEMPLATEPATH . '/lib/home-thumbs.php' );

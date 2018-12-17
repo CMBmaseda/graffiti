@@ -65,119 +65,57 @@
       </div><!--. content-container -->
 
       <div class="content-frames">
-        <h2>Static <a href="#/" title="">Link</a></h2>
         <!-- <iframe src="https://www.youtube.com/embed/3clUKc7uLoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.9132996708067!2d-74.10305668460764!3d40.299883979378826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f378897a731d0b5!2sA%26S+Courier+Service!5e0!3m2!1sen!2sus!4v1544391489394" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <?php $args = array('post_type' => 'graffiti_thumb'); ?>
+        <?php $loop = new WP_Query($args); ?>
+        <?php if ( $loop->have_posts() ) : ?>
+          <h2>
+            <?php
+            $gallery_title = get_post_meta($post->ID, 'Gallery Title', true);
+            if ($gallery_title) { ?>
+              <?php echo $gallery_title; ?>
+            <?php
+          } else { ?><!-- No Homepage Gallery Title --><?php } ?>
+          </h2>
+        <?php else: ?>
+         <?php // No Thumbs ?>
+        <?php endif; ?>
         <div class="thumbs">
-           <div class="thumbs-inner">
-             <ul>
-               <li>
-                 <a href="#img1">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti1.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img1">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti1.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img2">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti2.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img2">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti2.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img3">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti3.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img3">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti3.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img4">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti4.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img4">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti4.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img5">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti5.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img5">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti5.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img6">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti6.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img6">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti6.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img7">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti7.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img7">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti7.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
-               <li>
-                 <a href="#img8">
-                   <img src="<?php echo get_template_directory_uri() . '/images/graffiti8.png'; ?>" alt="">
-                   <h4>Static Title</h4>
-                   <h5>Static SubTitle</h5>
-                 </a>
-                 <a href="#/" class="lightbox" id="img8">
-                   <div class="lightbox-image-wrapper">
-                     <span>X</span>
-                     <img src="<?php echo get_template_directory_uri() . '/images/graffiti8.png'; ?>" alt="">
-                   </div>
-                 </a>
-               </li>
+          <div class="thumbs-inner">
+            <ul>
+               <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                 <?php
+                   $gallery_title = get_the_title( $thumbID );
+                   if (!empty($gallery_title)) {
+                     $thumb_title = $gallery_title;
+                   } else {
+                     $thumb_title = 'Unknown';
+                   }
+
+                   $gallery_excerpt = get_the_excerpt( $thumbID );
+                   if (!empty($gallery_excerpt)) {
+                     $thumb_excerpt = $gallery_excerpt;
+                   } else {
+                     $thumb_excerpt = '';
+                   }
+
+                   $thumb_image = get_the_post_thumbnail( $thumbID );
+                   $thumb_subtitle = get_post_meta( $post->ID, 'subtitle', true );
+                   $thumb_rank = get_post_meta( $post->ID, 'rank', true );
+                   echo '<li>';
+                   echo "<a href='#img" . $thumb_rank . "'>" . $thumb_image . '<h4>' . $thumb_title . '</h4>' . '<h5>' . $thumb_subtitle . '</h5>' . '</a>';
+                   echo "<a href='#/' class='lightbox' id='img" . $thumb_rank . "'>" . "<div class='lightbox-image-wrapper'><span>X</span>" . $thumb_image . '<p>' . $thumb_excerpt . '</p>' . '</div>' . '</a>';
+                   echo '</li>';
+                 ?>
+               <?php endwhile; ?>
              </ul>
            </div><!-- .thumbs-inner -->
          </div><!-- .thumbs -->
+        <?php else: ?>
+         <?php // No Thumbs ?>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
       </div><!-- .content-frames -->
 
 

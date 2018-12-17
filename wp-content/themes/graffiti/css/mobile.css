@@ -55,9 +55,6 @@
 		width: 700px;
     height: 425px;
 	}
-	.content-frames p {
-		width: 700px;
-	}
 	.gallery-page-button a {
 		font-size: 14px;
 		width: 200px;
@@ -149,9 +146,6 @@
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 560px;
     height: 340px;
-	}
-	.content-frames p {
-		width: 560px;
 	}
   .contact {
     padding: 0px 0px 24px 0px;

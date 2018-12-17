@@ -430,7 +430,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .content-frames p {
 	margin: 0 auto;
-	width: 980px;
+	width: 90%;
   font-size: 18px;
 }
 
@@ -566,6 +566,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   font-size: 18px;
   font-weight: 500;
   z-index: 3;
+	text-align: left;
 }
 a.lightbox {
   text-decoration: none;
