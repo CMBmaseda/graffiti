@@ -31,17 +31,8 @@
               </div>
             </li>
           </ul>
+          <h2><a href="/home">Home</a></h2>
         </div><!-- .headline  -->
-
-        <div class="content-wormholes content-bigscreen">
-          <!-- Primary Nav -->
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'primary_nav',
-              'container_class' => ''
-            ) );
-          ?>
-        </div><!-- content-wormholes content-bigscreen -->
 
         <div class="contact-content">
           <div><?php the_content(); ?></div>

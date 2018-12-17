@@ -48,6 +48,20 @@ jQuery('.page-theme-moon-button').on('click', function () {
     })
   );
   $(".content-wormholes li").removeAttr('style');
+  $(".breadcrumb a").removeAttr('style');
+  $('.breadcrumb a').hover((function() {
+    $(this).removeAttr('style');
+  }), (function() {
+    $(this).removeAttr('style');
+    })
+  );
+  $(".headline a").removeAttr('style');
+  $('.headline a').hover((function() {
+    $(this).removeAttr('style');
+  }), (function() {
+    $(this).removeAttr('style');
+    })
+  );
 });
 
 // Lightbulb Button
@@ -68,6 +82,20 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   );
   $(".content-frames a").css("color", "#8C001A");
   $('.content-frames a').hover((function() {
+    $(this).css("color", "rgba(23, 1, 23, 1)");
+  }), (function() {
+    $(this).css("color", "#8C001A");
+    })
+  );
+  $(".breadcrumb a").css("color", "#8C001A");
+  $('.breadcrumb a').hover((function() {
+    $(this).css("color", "rgba(23, 1, 23, 1)");
+  }), (function() {
+    $(this).css("color", "#8C001A");
+    })
+  );
+  $(".headline a").css("color", "#8C001A");
+  $('.headline a').hover((function() {
     $(this).css("color", "rgba(23, 1, 23, 1)");
   }), (function() {
     $(this).css("color", "#8C001A");

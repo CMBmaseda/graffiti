@@ -11,16 +11,6 @@
 /* Media Query
 ----------------------------------------------------------------------------- */
 
-@media all and (max-width: 2560px) {
-	.contact .content-wormholes {
-		margin-right: 480px;
-	}
-	.contact-content {
-		/* margin-right: 33.333%; */
-		margin-right: 25%;
-	}
-}
-
 @media all and (max-width: 1960px) {
 	.contact {
 	  padding: 0px 0px 6px 0px;

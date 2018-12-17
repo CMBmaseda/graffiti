@@ -36,7 +36,28 @@
           <div class="thesis group">
             <div class="thesis-pic">
               <a href="#/" title="">
-                <img src="<?php echo get_template_directory_uri() . '/images/rps.jpg'; ?>" alt="Click to play a quick game of rock, paper, scissors" title="Click to play a quick game of rock, paper, scissors"/>
+                <!-- Find and display the most recent post's image + Link -->
+                <?php
+                // the query
+                $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1 ) );
+                if ( $all_posts->have_posts() ) : ?>
+                  <?php while ( $all_posts->have_posts() ) : $all_posts->the_post(); ?>
+                     <?php
+                       $gallery_title = get_the_title();
+                       if (!empty($gallery_title)) {
+                         $thumb_title = $gallery_title;
+                       } else {
+                         $thumb_title = 'Unknown';
+                       }
+                       $thumb_image = get_the_post_thumbnail( $thumbID );
+                       $thumb_link = get_the_permalink();
+                       echo "<a href='" . $thumb_link . "'>" . $thumb_image . '</a>';
+                     ?>
+                  <?php endwhile; ?>
+                <?php else : ?>
+                  <p><?php _e( 'Sorry, no posts were found.' ); ?></p>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
               </a>
             </div><!-- thesis-pic -->
             <div class="thesis-statement">
@@ -131,107 +152,6 @@
     <?php endwhile;
   endif;
 ?>
-
-
-<script>
-jQuery('.thesis-pic a').on('click', function () {
-  var choiceArray = ["rock", "paper", "scissors", "scissor", "Hammer"];
-
-      var getchoice1 = function()
-    {
-      var choice1 = undefined;
-      var choice1Index = undefined;
-
-      while (true)
-      {
-        choice1 = prompt("Please choose rock, paper, or scissors");
-        choice1Index = choiceArray.indexOf(choice1);
-
-        if (choice1Index >= 0 && choice1Index <= 4)
-            return choice1;
-
-        alert("Your choice doesn't match rock, paper, or scissors");
-      }
-    }
-
-  var getchoice2 = function()
-  {
-  var choice2 = Math.random();
-   console.log(choice2);
-
-    if (choice2 < 0.34)
-      {
-        choice2 = "rock";
-        return choice2;
-        console.log(choice2);
-      }
-    else if(choice2 <= 0.67)
-      {
-        choice2 = "paper";
-        return choice2;
-        console.log(choice2);
-      }
-    else
-      {
-       choice2 = "scissors", "scissor";
-       return choice2;
-       console.log(choice2);
-      }
-  }
-
-  var compare = function(choice1, choice2)
-  {
-    if (choice1 === choice2)
-      return "Tie";
-
-    if (choice1 === "paper")
-    {
-      if (choice2 === "rock")
-        {
-          return "paper beats rock";
-        }
-      else //scissors
-        {
-          return "scissors beat paper";
-        }
-      }
-      if (choice1 === "rock")
-      {
-        if (choice2 === "paper")
-          {
-            return "paper beats rock";
-          }
-        else //scissors
-          {
-            return "rock beats scissors";
-          }
-      }
-      else //scissors
-      {
-        if (choice2 === "paper")
-        {
-          return "scissors beat paper";
-        }
-        else //rock
-        {
-            return "rock beats scissors";
-        }
-      }
-  }
-
-  var runGame = function()
-  {
-    var choice1 = getchoice1();
-    var choice2 = getchoice2();
-    var gameResult = compare(choice1, choice2);
-    gameResult = gameResult;
-    alert(gameResult);
-    console.log(gameResult);
-  }
-
-  runGame();
-});
-</script>
 
 
 <?php get_footer(); ?>

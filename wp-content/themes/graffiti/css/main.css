@@ -126,7 +126,7 @@ input[type=file] {
 
 label {
   font-size: 20px;
-	color: #a1c5c3;
+	color: #FFFFFF;
 }
 
 textarea {
@@ -514,6 +514,16 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	color: #a1c5c3;
 }
 
+.thumbs-inner.blog {
+	/* margin-top: 240px; */
+}
+.thumbs-inner.blog ul li a {
+	cursor: pointer;
+}
+.thumbs-inner.blog ul li h4:hover {
+	cursor: pointer;
+}
+
 
 /* Lightbox
 ----------------------------------------------------------------------------- */
@@ -534,8 +544,12 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .lightbox img {
   width: 100%;
-  /* margin-top: 30px; */
+	height: auto;
   z-index: 2;
+	border-radius: 0 !important;
+	-webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
 }
 .lightbox-image-wrapper {
   position: relative;
