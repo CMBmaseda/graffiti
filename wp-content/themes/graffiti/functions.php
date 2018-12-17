@@ -65,6 +65,18 @@
       'before_title' => '',
       'after_title' => ''
     ));
+    register_sidebar( array (
+      'name' => 'Iframe-Sidebar',
+      'id' => 'sidebar-iframe',
+      'description' => 'This sidebar is located in the center of the homepage.',
+      'before_widget' => '',
+      'after_widget' => '',
+    ));
+    register_sidebar( array (
+      'name' => 'Gallery-Sidebar',
+      'id' => 'sidebar-gallery',
+      'description' => 'This sidebar is located in the center of the homepage under the iframe.',
+    ));
   }
   add_action('widgets_init', 'graffitiWidgetInit');
 
@@ -77,6 +89,9 @@
   include ( TEMPLATEPATH . '/lib/linkedin-widget.php' );
   include ( TEMPLATEPATH . '/lib/phone-widget.php' );
   include ( TEMPLATEPATH . '/lib/email-widget.php' );
+
+  include ( TEMPLATEPATH . '/lib/iframe-widget.php' );
+  include ( TEMPLATEPATH . '/lib/gallery-widget.php' );
 
   include ( TEMPLATEPATH . '/lib/analytics-widget.php' );
 

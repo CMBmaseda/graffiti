@@ -58,8 +58,10 @@
         </div><!-- content-wormholes content-bigscreen -->
         <div class="content">
           <div class="content-video">
-            <h2>Static <a href="#/" title="">Link</a></h2>
-            <iframe src="https://www.youtube.com/embed/Clc9ZZ_egzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Iframe Widget -->
+            <?php if ( is_active_sidebar( 'sidebar-iframe' ) ) : ?>
+              <?php dynamic_sidebar( 'sidebar-iframe' ); ?>
+            <?php endif; ?>
           </div><!--. content-video -->
         </div><!--. content -->
       </div><!--. content-container -->
@@ -70,14 +72,10 @@
         <?php $args = array('post_type' => 'graffiti_thumb'); ?>
         <?php $loop = new WP_Query($args); ?>
         <?php if ( $loop->have_posts() ) : ?>
-          <h2>
-            <?php
-            $gallery_title = get_post_meta($post->ID, 'Gallery Title', true);
-            if ($gallery_title) { ?>
-              <?php echo $gallery_title; ?>
-            <?php
-          } else { ?><!-- No Homepage Gallery Title --><?php } ?>
-          </h2>
+          <!-- Gallery Title Widget -->
+          <?php if ( is_active_sidebar( 'sidebar-gallery' ) ) : ?>
+            <?php dynamic_sidebar( 'sidebar-gallery' ); ?>
+          <?php endif; ?>
         <?php else: ?>
          <?php // No Thumbs ?>
         <?php endif; ?>
