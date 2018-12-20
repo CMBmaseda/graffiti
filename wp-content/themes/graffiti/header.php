@@ -34,3 +34,52 @@
   <?php dynamic_sidebar( 'sidebar-analytics' ); ?>
 <?php endif; ?>
 </script>
+
+
+<div class="header">
+  <header class="site-header">
+
+    <div class="site-header-top">
+      <ul class="dimmers">
+        <li>
+          <div class="page-theme-button page-theme-moon-button">
+            <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+          </div>
+        </li>
+        <li>
+          <div class="page-theme-button disabled page-theme-lightbulb-button">
+            <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <input id="burger" type="checkbox" style="display:none;">
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <!-- Mobile Nav -->
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'mobile_nav',
+              'container_class' => 'menu-global-container'
+            ) );
+          ?>
+        </nav>
+      </div><!-- .hamburger -->
+    </div><!-- .site-header-top -->
+
+    <div class="site-header-menus">
+      <!-- Primary Nav -->
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary_nav',
+          'container_class' => 'menu-primary-container'
+        ) );
+      ?>
+    </div><!-- .site-header-menus -->
+
+  </header><!-- .site-header -->
+</div><!-- .header -->

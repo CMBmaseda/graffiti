@@ -19,19 +19,6 @@
           <div class="headline-overlay">
             <h1><?php the_title(); ?></h1>
           </div><!-- .hero-overlay -->
-          <ul>
-            <li>
-              <div class="page-theme-button page-theme-moon-button">
-                <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
-              </div>
-            </li>
-            <li>
-              <div class="page-theme-button disabled page-theme-lightbulb-button">
-                <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-              </div>
-            </li>
-          </ul>
-          <h2><a href="/home">Home</a></h2>
         </div><!-- .headline  -->
 
         <div class="contact-content">

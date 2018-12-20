@@ -21,12 +21,12 @@
 
   // Breadcrumbs
   function get_breadcrumb() {
-      echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+      // echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
       if (is_category() || is_single()) {
         // echo "&nbsp; &#8594; &nbsp;";
           // the_category(' &bull; ');
               if (is_single()) {
-                  echo "<br>";
+                  // echo "<br>";
                   the_title();
               }
       } elseif (is_page()) {

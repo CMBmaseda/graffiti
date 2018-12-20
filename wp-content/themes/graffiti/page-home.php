@@ -17,18 +17,6 @@
         <div class="headline-overlay">
           <h1><?php the_title(); ?></h1>
         </div><!-- .hero-overlay -->
-        <ul>
-          <li>
-            <div class="page-theme-button page-theme-moon-button">
-              <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
-            </div>
-          </li>
-          <li>
-            <div class="page-theme-button disabled page-theme-lightbulb-button">
-              <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-            </div>
-          </li>
-        </ul>
       </div><!-- .headline  -->
 
       <div class="wrapper group">
@@ -69,12 +57,36 @@
 
       <div class="content-container">
         <div class="content-wormholes content-bigscreen">
+          <h1><a href="/blog">Recent Posts</a></h1>
+          <ul>
+            <!-- Find and display the most recent post's image + Link -->
+            <?php
+            // the query
+            $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5 ) );
+            if ( $all_posts->have_posts() ) : ?>
+              <?php while ( $all_posts->have_posts() ) : $all_posts->the_post(); ?>
+                 <?php
+                   $title = get_the_title();
+                   if (!empty($title)) {
+                     $wormhole_title = $title;
+                   } else {
+                     $wormhole_title = 'Unknown';
+                   }
+                   $link = get_the_permalink();
+                   echo "<li><a href='" . $link . "'>" . $wormhole_title . '</a></li>';
+                 ?>
+              <?php endwhile; ?>
+            <?php else : ?>
+              <p><?php _e( 'Sorry, no posts were found.' ); ?></p>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
+          </ul>
           <!-- Primary Nav -->
           <?php
-            wp_nav_menu( array(
-              'theme_location' => 'primary_nav',
-              'container_class' => ''
-            ) );
+            // wp_nav_menu( array(
+            //   'theme_location' => 'primary_nav',
+            //   'container_class' => ''
+            // ) );
           ?>
         </div><!-- content-wormholes content-bigscreen -->
         <div class="content">

@@ -2,12 +2,19 @@
  Media Queries CSS file for graffiti theme
 ----------------------------------------------------------------------------- */
 
+
 /* min-width */
+/* Media Query
+----------------------------------------------------------------------------- */
+
+@media (min-width: 1510px) {
+  .site-header {
+    width: 80%;
+  }
+}
 
 
 /* max-width */
-
-
 /* Media Query
 ----------------------------------------------------------------------------- */
 
@@ -24,6 +31,9 @@
 }
 
 @media all and (max-width: 1630px) {
+	.site-header .menu-primary-container {
+    font-size: 18px;
+  }
 	.headline iframe, .headline img, .headline-overlay {
 	  width: 1500px;
 	  height: 500px;
@@ -55,6 +65,9 @@
 }
 
 @media screen and (max-width: 1280px) {
+	.site-header .menu-primary-container {
+    font-size: 14px;
+  }
 	.headline iframe, .headline img, .headline-overlay {
 	  width: 1000px;
 	  height: 333px;
@@ -82,6 +95,10 @@
     width: 100%;
     margin-top: 16px;
   }
+	.content-wormholes li {
+    margin: 48px 18px;
+		background: -webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)));
+	}
 	.contact .content-wormholes {
 		margin-right: 0;
 	}
@@ -130,6 +147,29 @@
   .lightbox p {
     font-size: 12px;
   }
+	.site-header .site-header-menus { display: none; }
+	.site-header-top .hamburger .dimmers-burger img {
+    display: block;
+    height: auto;
+    width: 144px;
+    height: auto;
+    margin-right: 0px;
+  }
+	.site-header .menu-primary-container .menu li a {
+	  display: block;
+	  margin: 0px;
+	}
+	.site-header .dimmers {
+    margin-right: 0px;
+	}
+  .site-header .menu-global-container { display: block; }
+  .hamburger { display: block; }
+	.hamburger input:checked + label span {
+    top: 18px;
+	}
+	.site-header {
+    padding: 0;
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -194,7 +234,7 @@
 	.content-wormholes {
 		float: left;
 		width: 100%;
-		margin-top: 16px;
+		margin-top: 20px;
 	}
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 420px;
@@ -208,9 +248,16 @@
 	  width: 480px;
 	  height: 160px;
   }
+	.hamburger input + label {
+		right: 30px;
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.site-header .menu-global-container {
+    top: 100px;
+    right: 25%;
+  }
 	.headline h1 {
     font-size: 36px;
 	}
@@ -229,7 +276,7 @@
 		margin-top: 10px;
 	}
 	.thumbs-inner ul li {
-	  margin: 0px !important;
+	  margin: 18px 0px !important;
 	}
 	.content-wormholes a {
 	  font-size: 18px;

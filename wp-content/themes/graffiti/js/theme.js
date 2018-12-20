@@ -73,6 +73,23 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   $("html").css("background", "#e5dfee");
   $("body").css("background", "linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)");
   $("body").css("color", "rgba(23, 1, 23, 1)");
+  $(".header").css("background", "#dad4ec");
+  // $(".header").css("background", "-webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))");
+  // $(".site-header a").css("color", "#dad4ec");
+  // $('.site-header a').hover((function() {
+  //   $(this).css("color", "#FFFFFF");
+  // }), (function() {
+  //   $(this).css("color", "#dad4ec");
+  //   })
+  // );
+  $(".headline a").css("color", "#8C001A");
+  $('.headline a').hover((function() {
+    $(this).css("color", "rgba(23, 1, 23, 1)");
+  }), (function() {
+    $(this).css("color", "#8C001A");
+    })
+  );
+  $(".thesis-pic a").css("color", "rgba(23, 1, 23, 1)");
   $(".content-video a").css("color", "#8C001A");
   $('.content-video a').hover((function() {
     $(this).css("color", "rgba(23, 1, 23, 1)");
@@ -94,14 +111,6 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "#8C001A");
     })
   );
-  $(".headline a").css("color", "#8C001A");
-  $('.headline a').hover((function() {
-    $(this).css("color", "rgba(23, 1, 23, 1)");
-  }), (function() {
-    $(this).css("color", "#8C001A");
-    })
-  );
-  $(".thesis-pic a").css("color", "rgba(23, 1, 23, 1)");
   $("input, input[type='password'], input[type='search']").css("color", "rgba(23, 1, 23, 1)");
   $("input, input[type='password'], input[type='search']").css("border", "1px solid rgba(23, 1, 23, 1);");
   $("input[type=file]").css("color", "rgba(23, 1, 23, 1)");
@@ -122,7 +131,7 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   );
   $("textarea").css("border", "1px solid rgba(23, 1, 23, 1);");
   $("textarea").css("color", "rgba(23, 1, 23, 1)");
-  $("ul.icons li .icon").css("color", "rgba(23, 1, 23, 1)");
+  // $("ul.icons li .icon").css("color", "rgba(23, 1, 23, 1)");
   $(".content-wormholes a").css("color", "rgba(255, 255, 255, 0.9)");
   $('.content-wormholes a').hover((function() {
     $(this).css("color", "#FFFFFF");
