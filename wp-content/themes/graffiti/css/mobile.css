@@ -105,15 +105,15 @@
 	.content-bigscreen {
 		display: none;
 	}
-	.content-mobile {
-		display: block;
-	}
 	.contact-content {
 		margin-right: 0;
 	}
 }
 
 @media screen and (max-width: 1024px) {
+  .content-mobile {
+		display: block;
+	}
 	.headline iframe, .headline img, .headline-overlay {
 	  width: 750px;
 	  height: 250px;

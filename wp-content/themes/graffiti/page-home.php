@@ -57,7 +57,7 @@
 
       <div class="content-container">
         <div class="content-wormholes content-bigscreen">
-          <h1><a href="/blog">Recent Posts</a></h1>
+          <h2><a href="/blog">Recent Posts</a></h2>
           <ul>
             <!-- Find and display the most recent post's image + Link -->
             <?php

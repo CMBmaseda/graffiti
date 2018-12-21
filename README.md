@@ -20,9 +20,7 @@ None at this time.
 ## TODO
 
 ```
-1. Smaller text on mobile for thumbs --- DONE
-2. Custom post type for thesis pic img
-3. 5 most recent posts in wormhole nav(s)
-4. Header nav with hamburger menu
-5. Touch ups and update readme plus staging homepage content
+1. Custom post type for thesis pic img
+2. Header nav with hamburger menu
+3. update readme plus staging homepage content
 ```
