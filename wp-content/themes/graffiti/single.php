@@ -12,9 +12,11 @@
           $background_image = get_template_directory_uri() . '/images/Graffiti.jpg';
         }
       ?>
-      <div class="headline">
-        <h2><div class="breadcrumb"><?php get_breadcrumb(); ?></h2>
-      </div><!-- .headline  -->
+      <section class="headline" style="background-image: url('<?php echo $background_image; ?>')">
+        <div class="headline-overlay">
+          <h1><div class="breadcrumb"><?php get_breadcrumb(); ?></h1>
+        </div><!-- .headline-overlay -->
+      </section><!-- .headline -->
 
       <div class="wrapper group">
         <div class="content-top">

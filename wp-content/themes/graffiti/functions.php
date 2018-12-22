@@ -10,7 +10,8 @@
   function graffiti_after_setup_theme() {
     // image sizes
     add_theme_support('post-thumbnails');
-    add_image_size('accordion', 940, 450, true);
+    // add_image_size('headline', 1960, 653, true);
+    set_post_thumbnail_size( 1960, 653, true );
     // menus
     register_nav_menus( array(
       'primary_nav' => 'Primary Nav',
@@ -81,19 +82,19 @@
   add_action('widgets_init', 'graffitiWidgetInit');
 
   // Load widgets.
-  include ( TEMPLATEPATH . '/lib/facebook-widget.php' );
-  include ( TEMPLATEPATH . '/lib/instagram-widget.php' );
-  include ( TEMPLATEPATH . '/lib/twitter-widget.php' );
-  include ( TEMPLATEPATH . '/lib/youtube-widget.php' );
-  include ( TEMPLATEPATH . '/lib/github-widget.php' );
-  include ( TEMPLATEPATH . '/lib/linkedin-widget.php' );
-  include ( TEMPLATEPATH . '/lib/phone-widget.php' );
-  include ( TEMPLATEPATH . '/lib/email-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/facebook-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/instagram-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/twitter-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/youtube-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/github-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/linkedin-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/phone-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/email-widget.php' );
 
-  include ( TEMPLATEPATH . '/lib/iframe-widget.php' );
-  include ( TEMPLATEPATH . '/lib/gallery-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/iframe-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/gallery-widget.php' );
 
-  include ( TEMPLATEPATH . '/lib/analytics-widget.php' );
+  include ( TEMPLATEPATH . '/lib/widgets/analytics-widget.php' );
 
 
   // Load the custom post types.

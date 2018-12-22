@@ -34,11 +34,11 @@
 	.site-header .menu-primary-container {
     font-size: 18px;
   }
-
+  .headline {
+  	height: 510px;
+  }
+}
 @media all and (max-width: 1440px) {
-  /* .contact {
-    padding: 6px 0px 24px 0px;
-  } */
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 700px;
     height: 425px;
@@ -50,6 +50,15 @@
 		border: 1px solid #391a12;
 		color: #391a12;
 	}
+  .thumbs-inner ul li img, .thumbs-inner ul li iframe {
+  	height: 180px;
+  }
+  .headline {
+  	height: 450px;
+  }
+  .headline-overlay h1 {
+  	font-size: 48px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -95,16 +104,27 @@
 	.contact-content {
 		margin-right: 0;
 	}
-  .headline h1 {
-		font-size: 36px;
-		word-spacing: 6px;
-	}
+  .headline {
+  	height: 400px;
+  }
+  .headline-overlay h1 {
+  	font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .content-mobile {
 		display: block;
 	}
+  input, input[type="password"], input[type="search"], textarea {
+	  width: 480px;
+	}
+  .headline {
+  	height: 330px;
+  }
+  .thumbs-inner ul li img, .thumbs-inner ul li iframe {
+  	height: 300px;
+  }
 	.thumbs h2 {
     margin-top: 0px;
 	}
@@ -122,9 +142,6 @@
   .thumbs-inner ul li h5 {
     font-size: 12px;
   }
-	input, input[type="password"], input[type="search"], textarea {
-	  width: 480px;
-	}
   .lightbox span {
     top: 40px;
     right: 40px;
@@ -173,12 +190,27 @@
     padding: 12px 0px 12px 0px;
     margin: 0 auto;
   }
-  .headline-overlay {
-		top: 20%;
-	}
+  .headline {
+  	height: 240px;
+  }
+  .headline-overlay h1 {
+    top: 20%;
+  }
+  .thumbs-inner ul li img, .thumbs-inner ul li iframe {
+  	height: 240px;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .headline {
+  	height: 210px;
+  }
+  .headline-overlay h1 {
+  	font-size: 24px;
+  }
+  .thumbs-inner ul li img, .thumbs-inner ul li iframe {
+  	height: 180px;
+  }
 	textarea {
 	  width: 240px;
 	  height: 120px;
@@ -204,9 +236,6 @@
 		width: 100%;
 		margin: 0 auto;
 	}
-	.headline h1 {
-		font-size: 30px;
-	}
 	.content {
 		width: 94%;
 		float: left;
@@ -228,19 +257,22 @@
 	.hamburger input + label {
 		right: 30px;
 	}
-  .headline h1 {
-    font-size: 24px;
-	}
 }
 
 @media screen and (max-width: 480px) {
+  .headline {
+  	height: 160px;
+  }
+  .headline-overlay h1 {
+    top: 10%;
+  }
+  .thumbs-inner ul li img, .thumbs-inner ul li iframe {
+  	height: 120px;
+  }
 	.site-header .menu-global-container {
     top: 100px;
     right: 25%;
   }
-  .headline-overlay {
-		top: 10%;
-	}
 	.thesis-statement p {
 		font-size: 14px;
 	}
@@ -260,6 +292,9 @@
 }
 
 @media screen and (max-width: 440px) {
+  .headline {
+  	height: 110px;
+  }
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 350px;
 		height: 212px;

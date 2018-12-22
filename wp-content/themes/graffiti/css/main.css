@@ -533,6 +533,51 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 
 
+/* Hero
+----------------------------------------------------------------------------- */
+
+.headline {
+	width: 100%;
+	max-width: 1960px;
+	height: 650px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.headline-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.headline-overlay h1 {
+	position: absolute;
+	left: 50%;
+  top: 30%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+	clear: both;
+	opacity: 1.0;
+	font-size: 60px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 600;
+  color: #fff;
+	text-align: center;
+}
+
+
 /* Content
 ----------------------------------------------------------------------------- */
 
@@ -549,47 +594,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .contact-content {
 	margin-right: 0;
-}
-
-
-.headline {
-	position: relative;
-	max-width: 1800px;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	color: rgba(251, 255, 255, 1);
-}
-/* .headline:hover {
-	color: rgba(0, 0, 0, 0);
-} */
-.headline img {
-  width: 100%;
-  height: auto;
-	opacity: 0.7;
-}
-/* .headline img:hover {
-  opacity: 1;
-} */
-.headline h1 {
-  font-size: 60px;
-	font-family: 'Abril Fatface', cursive;
-	font-weight: 700;
-  letter-spacing: 2px;
-	word-spacing: 12px;
-}
-.headline-overlay {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  cursor: -webkit-grabbing;
-  cursor: none;
-  /* padding: 0px 12px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -786,7 +790,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   width: 100%;
-	height: auto;
+	height: 240px;
 	-webkit-filter: saturate(150%);
 	-moz-filter: saturate(150%);
 	filter: saturate(150%);
@@ -869,7 +873,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .lightbox img {
   width: 100%;
-	height: auto;
+	height: auto !important;
   z-index: 2;
 	border-radius: 0 !important;
 	-webkit-box-shadow: none !important;

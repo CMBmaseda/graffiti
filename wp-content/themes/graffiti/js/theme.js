@@ -55,15 +55,14 @@ jQuery('.page-theme-moon-button').on('click', function () {
     $(this).removeAttr('style');
     })
   );
-  $(".headline a").removeAttr('style');
-  $('.headline a').hover((function() {
+  $('.content-wormholes h2 a').hover((function() {
     $(this).removeAttr('style');
   }), (function() {
     $(this).removeAttr('style');
     })
   );
-  $(".headline img").removeAttr('style');
-  $('.content-wormholes h2 a').hover((function() {
+  $(".thesis-statement p a").removeAttr('style');
+  $('.thesis-statement p a').hover((function() {
     $(this).removeAttr('style');
   }), (function() {
     $(this).removeAttr('style');
@@ -89,8 +88,8 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   //   $(this).css("color", "#dad4ec");
   //   })
   // );
-  $(".headline a").css("color", "#8C001A");
-  $('.headline a').hover((function() {
+  $(".thesis-statement p a").css("color", "#8C001A");
+  $('.thesis-statement p a').hover((function() {
     $(this).css("color", "rgba(23, 1, 23, 1)");
   }), (function() {
     $(this).css("color", "#8C001A");
@@ -103,9 +102,6 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "#8C001A");
     })
   );
-  // $(".headline").css("background", "rgba(23, 1, 23, 1)");
-  $(".headline h2").css("color", "rgba(23, 1, 23, 1)");
-  $(".headline img").css("opacity", "1");
   $(".thesis-pic a").css("color", "rgba(23, 1, 23, 1)");
   $(".content-video a").css("color", "#8C001A");
   $('.content-video a').hover((function() {

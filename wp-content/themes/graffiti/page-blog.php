@@ -12,13 +12,11 @@
           $background_image = get_template_directory_uri() . '/images/Graffiti.jpg';
         }
       ?>
-      <div class="headline">
-        <img src="<?php echo $background_image ?>" />
+      <section class="headline" style="background-image: url('<?php echo $background_image; ?>')">
         <div class="headline-overlay">
           <h1><?php the_title(); ?></h1>
         </div><!-- .headline-overlay -->
-        <h2>Posts</h2>
-      </div><!-- .headline  -->
+      </section><!-- .headline -->
 
       <div class="content-container">
         <div class="content-frames">
