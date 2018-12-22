@@ -18,24 +18,12 @@
           <img src="<?php echo $background_image ?>" />
           <div class="headline-overlay">
             <h1><?php the_title(); ?></h1>
-          </div><!-- .hero-overlay -->
+          </div><!-- .headline-overlay -->
         </div><!-- .headline  -->
 
         <div class="contact-content">
           <div><?php the_content(); ?></div>
         </div><!-- .contact-content -->
-
-        <!-- <h3><div class="breadcrumb"><?php //get_breadcrumb(); ?></h3> -->
-
-        <div class="content-wormholes content-mobile">
-          <!-- Mobile Nav -->
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'mobile_nav',
-              'container_class' => ''
-            ) );
-          ?>
-        </div><!-- content-wormholes content-mobile -->
 
 
       <?php endwhile;

@@ -16,7 +16,7 @@
         <img src="<?php echo $background_image ?>" />
         <div class="headline-overlay">
           <h1><?php the_title(); ?></h1>
-        </div><!-- .hero-overlay -->
+        </div><!-- .headline-overlay -->
         <h2>Posts</h2>
       </div><!-- .headline  -->
 
@@ -54,16 +54,6 @@
           </div><!-- .thumbs -->
         </div><!-- .content-frames -->
       </div><!--. content-container -->
-
-      <div class="content-wormholes content-mobile">
-        <!-- Mobile Nav -->
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'mobile_nav',
-            'container_class' => ''
-          ) );
-        ?>
-      </div><!-- content-wormholes content-mobile -->
 
 
     <?php endwhile;

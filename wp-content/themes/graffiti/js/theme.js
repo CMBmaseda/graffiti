@@ -62,6 +62,13 @@ jQuery('.page-theme-moon-button').on('click', function () {
     $(this).removeAttr('style');
     })
   );
+  $(".headline img").removeAttr('style');
+  $('.content-wormholes h2 a').hover((function() {
+    $(this).removeAttr('style');
+  }), (function() {
+    $(this).removeAttr('style');
+    })
+  );
 });
 
 // Lightbulb Button
@@ -89,6 +96,16 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "#8C001A");
     })
   );
+  $(".content-wormholes h2 a").css("color", "#8C001A");
+  $('.content-wormholes h2 a').hover((function() {
+    $(this).css("color", "rgba(23, 1, 23, 1)");
+  }), (function() {
+    $(this).css("color", "#8C001A");
+    })
+  );
+  // $(".headline").css("background", "rgba(23, 1, 23, 1)");
+  $(".headline h2").css("color", "rgba(23, 1, 23, 1)");
+  $(".headline img").css("opacity", "1");
   $(".thesis-pic a").css("color", "rgba(23, 1, 23, 1)");
   $(".content-video a").css("color", "#8C001A");
   $('.content-video a').hover((function() {
@@ -131,14 +148,6 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
   );
   $("textarea").css("border", "1px solid rgba(23, 1, 23, 1);");
   $("textarea").css("color", "rgba(23, 1, 23, 1)");
-  // $("ul.icons li .icon").css("color", "rgba(23, 1, 23, 1)");
-  $(".content-wormholes a").css("color", "rgba(255, 255, 255, 0.9)");
-  $('.content-wormholes a').hover((function() {
-    $(this).css("color", "#FFFFFF");
-  }), (function() {
-    $(this).css("color", "#FFFFFF");
-    })
-  );
   $(".content-wormholes li").css("background", "-webkit-gradient(linear, 46% 37%, 64% 73%, from(rgba(23, 1, 23, 1)), to(rgba(46, 1, 23, 1)))");
   $('input[type=submit]').hover((function() {
     $(this).css("color", "#FFFFFF");

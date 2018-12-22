@@ -73,16 +73,6 @@
         </div><!-- .content-frames -->
       </div><!--. content-container -->
 
-      <div class="content-wormholes content-mobile">
-        <!-- Mobile Nav -->
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'mobile_nav',
-            'container_class' => ''
-          ) );
-        ?>
-      </div><!-- content-wormholes content-mobile -->
-
 
     <?php endwhile;
   endif;

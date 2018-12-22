@@ -21,6 +21,5 @@ None at this time.
 
 ```
 1. Custom post type for thesis pic img
-2. Header nav with hamburger menu
-3. update readme plus staging homepage content
+2. update readme plus staging homepage content
 ```

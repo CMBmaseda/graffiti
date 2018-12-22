@@ -16,7 +16,7 @@
         <img src="<?php echo $background_image ?>" />
         <div class="headline-overlay">
           <h1><?php the_title(); ?></h1>
-        </div><!-- .hero-overlay -->
+        </div><!-- .headline-overlay -->
       </div><!-- .headline  -->
 
       <div class="wrapper group">
@@ -148,17 +148,6 @@
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
       </div><!-- .content-frames -->
-
-
-      <div class="content-wormholes content-mobile">
-        <!-- Mobile Nav -->
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'mobile_nav',
-            'container_class' => ''
-          ) );
-        ?>
-      </div><!-- content-wormholes content-mobile -->
 
 
     <?php endwhile;
