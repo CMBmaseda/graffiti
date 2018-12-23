@@ -34,6 +34,9 @@
 	.site-header .menu-primary-container {
     font-size: 18px;
   }
+  .site-header .menu-primary-container .menu li {
+  	margin: 0;
+  }
   .headline {
   	height: 510px;
   }
@@ -206,7 +209,7 @@
   	height: 210px;
   }
   .headline-overlay h1 {
-  	font-size: 24px;
+  	font-size: 18px;
   }
   .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   	height: 180px;
@@ -230,7 +233,7 @@
 	.thesis-pic img {
 		width: 120px;
 		height: 120px;
-		border-radius: 50%;
+		/* border-radius: 50%; */
   }
 	.thesis-statement {
 		width: 100%;

@@ -229,46 +229,10 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   justify-content: center;
 }
 
-.admin-bar .site-header {
-  margin-bottom: 10px;
-  margin: auto;
-  justify-content: center;
-}
-
 .site-header .site-header-top {
 	display: flex;
 }
 
-.site-header .dimmers {
-	display: flex;
-	margin-right: 72px;
-	align-items: center;
-	/* flex-grow: 1; */
-}
-.site-header .dimmers-burger {
-	display: flex;
-	margin-right: 10px;
-	align-items: center;
-	/* flex-grow: 1; */
-	margin-left: 10px;
-  height: 30px;
-}
-
-.site-header .dimmers ul {
-	display: block;
-	height: auto;
-}
-.site-header .dimmers-burger ul {
-	display: none;
-}
-.site-header .dimmers {
-  height: 30px;
-}
-.site-header .dimmers ul {}
-
-.site-header .site-header-top ul.dimmers li a {
-	margin-top: 0px;
-}
 .site-header .menu-primary-container .menu li a {
   display: block;
   margin: 0px 22px;
@@ -312,7 +276,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 
 .site-header .menu-primary-container {
-	font-size: 14px;
+	font-size: 24px;
 	width: 100%;
 }
 
@@ -321,7 +285,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 
 .site-header .menu-primary-container .menu li {
-	margin: 0;
+	margin: -4px;
   text-align: left;
 	display: block;
 	position: relative;
@@ -377,9 +341,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .site-header .toggle-button.narrow {
   display: none;
 }
-.site-header .menu-primary-container {
-  font-size: 20px;
-}
 .site-header .menu-primary-container .menu {
   display: flex;
   align-items: flex-end;
@@ -418,6 +379,34 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   white-space: nowrap;
 }
 
+.site-header .dimmers {
+	display: flex;
+	margin-right: 90px;
+	align-items: center;
+}
+.site-header .dimmers-burger {
+	display: flex;
+	margin-right: 10px;
+	align-items: center;
+	margin-left: 10px;
+  height: 30px;
+}
+.site-header .dimmers ul {
+	display: block;
+	height: auto;
+}
+.site-header .dimmers-burger ul {
+	display: none;
+}
+.site-header .dimmers {
+  height: 30px;
+}
+.site-header .dimmers ul {}
+
+.site-header .site-header-top ul.dimmers li a {
+	margin-top: 0px;
+}
+
 .page-theme-button {}
 .page-theme-button a {
   text-align: center;
@@ -430,7 +419,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   min-width: 30px;
   margin: 6px auto;
   padding: 6px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #dad4ec;
   border-radius: 16.666%;
   color: #FFFFFF;
   background: rgba(46, 1, 23, 1);
@@ -630,9 +619,9 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	height: 240px;
 	margin-top: 36px;
 	border-radius: 6px 24px 6px;
-	-webkit-box-shadow: 3px 3px 3px 3px;
+	/* -webkit-box-shadow: 3px 3px 3px 3px;
      -moz-box-shadow: 3px 3px 3px 3px;
-          box-shadow: 3px 3px 3px 3px;
+          box-shadow: 3px 3px 3px 3px; */
 	-webkit-filter: saturate(110%);
 	   -moz-filter: saturate(110%);
 				  filter: saturate(110%);
@@ -787,6 +776,9 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .thumbs-inner ul li a {
   text-decoration: none;
   cursor: zoom-in;
+}
+.thumbs-inner ul li.custom-thumb img, .thumbs-inner ul li.custom-thumb iframe {
+	height: auto !important;
 }
 .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   width: 100%;

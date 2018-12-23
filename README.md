@@ -21,5 +21,5 @@ None at this time.
 
 ```
 1. Custom post type for thesis pic img
-2. update readme plus staging homepage content
+2. update readme plus staging content
 ```

@@ -133,7 +133,7 @@
                    $thumb_image = get_the_post_thumbnail( $thumbID );
                    $thumb_subtitle = get_post_meta( $post->ID, 'subtitle', true );
                    $thumb_rank = get_post_meta( $post->ID, 'rank', true );
-                   echo '<li>';
+                   echo "<li class='custom-thumb'>";
                    echo "<a href='#img" . $thumb_rank . "'>" . $thumb_image . '<h4>' . $thumb_title . '</h4>' . '<h5>' . $thumb_subtitle . '</h5>' . '</a>';
                    echo "<a href='#/' class='lightbox' id='img" . $thumb_rank . "'>" . "<div class='lightbox-image-wrapper'><span>X</span>" . $thumb_image . '<p>' . $thumb_excerpt . '</p>' . '</div>' . '</a>';
                    echo '</li>';
