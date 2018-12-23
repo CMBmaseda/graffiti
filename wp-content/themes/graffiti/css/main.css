@@ -213,11 +213,9 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 ----------------------------------------------------------------------------- */
 
 .header {
-	/* position: fixed;
-	z-index: 99999; */
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 	background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 }
 
@@ -275,7 +273,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 
 .site-header .menu-primary-container {
-	font-size: 24px;
+	font-size: 18px;
 	width: 100%;
 }
 
@@ -303,9 +301,8 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .site-header .site-header-menus {
 	position: relative;
   display: block;
-	width: 50%;
+	width: 80%;
 	margin: auto;
-  height: 34px;
 }
 .site-header.expanded .site-header-menus {
 	display: block;
@@ -351,7 +348,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   display: none;
   position: absolute;
   width: 100%;
-  top: 120px;
+  top: 60px;
   left: 0;
 }
 .site-header.expanded .menu-global-container {
@@ -374,7 +371,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   right: 44px;
 	width: 26px;
   height: 20px;
-	top: 60px;
+	top: 9px;
 }
 .hamburger input:checked + label{
   position: fixed;
@@ -440,13 +437,11 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   transition-delay: 0s;
 }
 .hamburger input ~ nav > ul > li > a {
+	display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFFFFF;
   font-weight: 700;
   font-family: sans-serif;
-  display: block;
-  /* padding: 20px; */
 }
 .hamburger input:checked ~ nav {
   position: fixed;

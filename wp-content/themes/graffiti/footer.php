@@ -9,12 +9,12 @@
 
 <div class="social">
   <ul class="dimmers">
-    <li>
+    <li title="Darken the theme page's backgrounds.">
       <div class="page-theme-button page-theme-moon-button">
         <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
       </div>
     </li>
-    <li>
+    <li title="Brighten the theme page's backgrounds.">
       <div class="page-theme-button disabled page-theme-lightbulb-button">
         <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
       </div>

@@ -42,7 +42,7 @@
     <div class="site-header-top">
       <div class="hamburger">
         <input id="burger" type="checkbox" style="display:none;">
-        <label for="burger">
+        <label for="burger" <?php if ( is_admin_bar_showing() ) echo 'style="top:41px;"'; ?>>
           <span></span>
           <span></span>
           <span></span>
