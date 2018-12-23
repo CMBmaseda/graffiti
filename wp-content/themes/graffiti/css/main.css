@@ -268,6 +268,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 
 .site-header a {
 	color: rgb(140, 0, 26);
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }

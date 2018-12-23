@@ -20,7 +20,6 @@
       </div>
     </li>
   </ul>
-  <p class="">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>.&nbsp; ALL RIGHTS RESERVED</p>
   <ul class="icons">
     <?php if ( is_active_sidebar( 'sidebar-facebook' ) ) : ?>
     	<?php dynamic_sidebar( 'sidebar-facebook' ); ?>
@@ -47,6 +46,7 @@
     	<?php dynamic_sidebar( 'sidebar-email' ); ?>
     <?php endif; ?>
   </ul><!-- icons -->
+  <p class="">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>.&nbsp; ALL RIGHTS RESERVED</p>
 </div><!-- social -->
 
 
