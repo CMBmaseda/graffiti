@@ -155,13 +155,6 @@
     font-size: 12px;
   }
 	.site-header .site-header-menus { display: none; }
-	.site-header-top .hamburger .dimmers-burger img {
-    display: block;
-    height: auto;
-    width: 144px;
-    height: auto;
-    margin-right: 0px;
-  }
 	.site-header .menu-primary-container .menu li a {
 	  display: block;
 	  margin: 0px;
@@ -180,6 +173,9 @@
 }
 
 @media screen and (max-width: 770px) {
+  .hamburger input + label {
+  	top: 70px;
+  }
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 560px;
     height: 340px;
@@ -271,10 +267,6 @@
   }
   .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   	height: 120px;
-  }
-	.site-header .menu-global-container {
-    top: 100px;
-    right: 25%;
   }
 	.thesis-statement p {
 		font-size: 14px;

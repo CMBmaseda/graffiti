@@ -8,6 +8,18 @@
 
 
 <div class="social">
+  <ul class="dimmers">
+    <li>
+      <div class="page-theme-button page-theme-moon-button">
+        <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+      </div>
+    </li>
+    <li>
+      <div class="page-theme-button disabled page-theme-lightbulb-button">
+        <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+      </div>
+    </li>
+  </ul>
   <p class="">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>.&nbsp; ALL RIGHTS RESERVED</p>
   <ul class="icons">
     <?php if ( is_active_sidebar( 'sidebar-facebook' ) ) : ?>

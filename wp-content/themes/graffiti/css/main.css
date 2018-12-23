@@ -235,7 +235,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 
 .site-header .menu-primary-container .menu li a {
   display: block;
-  margin: 0px 22px;
 }
 .site-header .menu-primary-container .menu li a:hover {
 	color: rgba(46, 1, 23, 1) !important;
@@ -280,20 +279,11 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	width: 100%;
 }
 
-.site-header .menu-primary-container .menu {
+.site-header .menu-primary-container ul.menu {
 	width: 100%;
 }
-
-.site-header .menu-primary-container .menu li {
-	margin: -4px;
-  text-align: left;
-	display: block;
-	position: relative;
-	word-spacing: 1px;
-}
-
-.site-header .menu-primary-container .menu li a:hover,
-.site-header .menu-primary-container .menu li.current-menu-item a {
+.site-header .menu-primary-container ul.menu li a:hover,
+.site-header .menu-primary-container ul.menu li.current-menu-item a {
 	color: rgba(46, 1, 23, 1);
   text-decoration: none;
 }
@@ -301,11 +291,20 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .site-header .menu-global-container {
 	display: block;
 }
+.site-header .menu-global-container ul.menu li {
+	border-bottom: 1px solid rgba(23,1,23,1);
+	margin: -4px;
+  text-align: left;
+	display: block;
+	position: relative;
+	word-spacing: 1px;
+}
+
 .site-header .site-header-menus {
-	/* flex-grow: 1; */
+	position: relative;
   display: block;
-  position: relative;
-  width: auto;
+	width: 50%;
+	margin: auto;
   height: 34px;
 }
 .site-header.expanded .site-header-menus {
@@ -333,7 +332,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   display: flex;
   align-items: flex-end;
 }
-.site-header.expanded {}
+
 .site-header .toggle-button.wide {
   display: block;
   margin-bottom: 26px;
@@ -341,18 +340,19 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .site-header .toggle-button.narrow {
   display: none;
 }
-.site-header .menu-primary-container .menu {
+
+.site-header .menu-primary-container ul.menu {
   display: flex;
-  align-items: flex-end;
   height: auto;
-  padding-bottom: 5px;
-  justify-content: flex-end;
+	justify-content: space-between;
 }
+
 .site-header .menu-global-container {
   display: none;
   position: absolute;
-  top: 90px;
-  left: 60px;
+  width: 100%;
+  top: 120px;
+  left: 0;
 }
 .site-header.expanded .menu-global-container {
   display: block;
@@ -360,69 +360,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .site-header .menu-global-container .menu li a {
 	font-weight: 500;
   font-size: 24px;
-}
-.site-header .menu li ul.sub-menu {
-  position: absolute;
-  display: none;
-  /* left: -10px; */
-  top: 90px;
-  padding-top: 25px;
-  z-index: 1000;
-}
-.site-header .menu li ul.sub-menu li {
-  text-align: left;
-}
-.site-header .menu li:hover ul.sub-menu {
-  display: block;
-}
-.site-header .menu ul.sub-menu li a {
-  white-space: nowrap;
-}
-
-.site-header .dimmers {
-	display: flex;
-	margin-right: 90px;
-	align-items: center;
-}
-.site-header .dimmers-burger {
-	display: flex;
-	margin-right: 10px;
-	align-items: center;
-	margin-left: 10px;
-  height: 30px;
-}
-.site-header .dimmers ul {
-	display: block;
-	height: auto;
-}
-.site-header .dimmers-burger ul {
-	display: none;
-}
-.site-header .dimmers {
-  height: 30px;
-}
-.site-header .dimmers ul {}
-
-.site-header .site-header-top ul.dimmers li a {
-	margin-top: 0px;
-}
-
-.page-theme-button {}
-.page-theme-button a {
-  text-align: center;
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  width: fit-content;
-  min-width: 30px;
-  margin: 6px auto;
-  padding: 6px;
-  border: 1px solid #dad4ec;
-  border-radius: 16.666%;
-  color: #FFFFFF;
-  background: rgba(46, 1, 23, 1);
 }
 
 
@@ -434,10 +371,10 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .hamburger input + label {
   z-index: 999999;
   position: absolute;
-  right: 40px;
+  right: 44px;
+	width: 26px;
   height: 20px;
-  width: 26px;
-	margin-top: -4px;
+	top: 60px;
 }
 .hamburger input:checked + label{
   position: fixed;
@@ -553,7 +490,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .headline-overlay h1 {
 	position: absolute;
-	left: 50%;
+	left: 49%;
   top: 30%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -928,9 +865,34 @@ a.lightbox {
 .social p {
 	font-size: 12px;
 }
-.social iframe {
-	width: 300px;
-	height: 150px;
+
+.dimmers {
+	display: flex;
+	height: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+	justify-content: center;
+}
+.dimmers ul {
+	display: block;
+	height: auto;
+}
+.page-theme-button {}
+.page-theme-button a {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  width: fit-content;
+  min-width: 30px;
+  margin: 6px auto;
+  padding: 6px;
+  border: 2px solid #dad4ec;
+  border-radius: 16.666%;
+  color: #FFFFFF;
+  background: rgba(46, 1, 23, 1);
 }
 
 

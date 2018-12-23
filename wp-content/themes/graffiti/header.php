@@ -40,18 +40,6 @@
   <header class="site-header">
 
     <div class="site-header-top">
-      <ul class="dimmers">
-        <li>
-          <div class="page-theme-button page-theme-moon-button">
-            <a href="#/"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
-          </div>
-        </li>
-        <li>
-          <div class="page-theme-button disabled page-theme-lightbulb-button">
-            <a href="#/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-          </div>
-        </li>
-      </ul>
       <div class="hamburger">
         <input id="burger" type="checkbox" style="display:none;">
         <label for="burger">
