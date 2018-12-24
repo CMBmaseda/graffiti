@@ -74,7 +74,7 @@
     text-align: center;
     margin: 16px 0px;
   }
-  .thesis-pic img {
+  .thesis-pic img, .thesis-pic svg {
   	margin-top: 18px;
   }
   .content {
@@ -208,7 +208,7 @@
     text-align: center;
     margin: 16px 0px;
   }
-	.thesis-pic img {
+	.thesis-pic img, .thesis-pic svg {
 		width: 120px;
 		height: 120px;
 		/* border-radius: 50%; */

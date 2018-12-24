@@ -552,13 +552,25 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	height: 240px;
 	margin-top: 36px;
 	border-radius: 6px 24px 6px;
-	/* -webkit-box-shadow: 3px 3px 3px 3px;
-     -moz-box-shadow: 3px 3px 3px 3px;
-          box-shadow: 3px 3px 3px 3px; */
 	-webkit-filter: saturate(110%);
 	   -moz-filter: saturate(110%);
 				  filter: saturate(110%);
+	-webkit-box-shadow: 3px 3px 3px 3px;
+     -moz-box-shadow: 3px 3px 3px 3px;
+          box-shadow: 3px 3px 3px 3px;
 }
+
+.thesis-pic svg {
+	width: 240px;
+	height: 240px;
+	margin-top: 36px;
+	/* border: 1px solid #8C001A; */
+}
+.thesis-pic svg polygon {
+	cursor: zoom-in;
+  fill: #dad4ec;
+}
+
 .thesis-pic a:hover {
 	-webkit-filter: saturate(110%);
 	   -moz-filter: saturate(110%);

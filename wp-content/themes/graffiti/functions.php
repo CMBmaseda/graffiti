@@ -96,4 +96,5 @@ include ( TEMPLATEPATH . '/lib/widgets/analytics-widget.php' );
 
 
 // Load the custom post types.
+include ( TEMPLATEPATH . '/lib/home-profile.php' );
 include ( TEMPLATEPATH . '/lib/home-thumbs.php' );
