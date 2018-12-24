@@ -73,6 +73,7 @@ jQuery('.page-theme-moon-button').on('click', function () {
     $(this).removeAttr('style');
     })
   );
+  $(".thesis-pic svg polygon").removeAttr('style');
 });
 
 // Lightbulb Button
@@ -156,6 +157,7 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "rgba(23, 1, 23, 1)");
     })
   );
+  $(".thesis-pic svg polygon").css("fill", "rgba(23, 1, 23, 1)");
 });
 
 
