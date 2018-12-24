@@ -26,7 +26,7 @@
                 <!-- Find and list all posts -->
                 <?php
                 // the query
-                $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 24 ) );
+                $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1 ) );
                 if ( $all_posts->have_posts() ) : ?>
                   <?php while ( $all_posts->have_posts() ) : $all_posts->the_post(); ?>
                      <?php
@@ -43,9 +43,6 @@
                        echo '</li>';
                      ?>
                   <?php endwhile; ?>
-                  <!-- Add the pagination functions here. -->
-                  <?php //next_posts_link(); ?>
-                  <?php //previous_posts_link(); ?>
                 <?php else : ?>
                   <p><?php _e( 'Sorry, no posts were found.' ); ?></p>
                 <?php endif; ?>
