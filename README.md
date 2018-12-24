@@ -1,5 +1,5 @@
 # graffiti
-A wordpress theme with custom post types
+A wordpress theme with custom post types and widgets
 
 ## System dependencies
 

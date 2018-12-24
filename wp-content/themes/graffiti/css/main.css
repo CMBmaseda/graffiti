@@ -568,7 +568,12 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .thesis-pic svg polygon {
 	cursor: zoom-in;
+}
+.thesis-pic svg polygon:nth-child(odd) {
   fill: #dad4ec;
+}
+.thesis-pic svg polygon:nth-child(even) {
+  fill: #FFFFFF;
 }
 
 .thesis-pic a:hover {

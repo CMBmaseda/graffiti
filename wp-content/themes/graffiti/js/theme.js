@@ -73,7 +73,10 @@ jQuery('.page-theme-moon-button').on('click', function () {
     $(this).removeAttr('style');
     })
   );
-  $(".thesis-pic svg polygon").removeAttr('style');
+  $(".thesis-pic svg polygon:nth-child(odd)").removeAttr('style');
+  $(".thesis-pic svg polygon:nth-child(even)").removeAttr('style');
+  $(".lightbox-image-wrapper svg polygon:nth-child(odd)").removeAttr('style');
+  $(".lightbox-image-wrapper svg polygon:nth-child(even)").removeAttr('style');
 });
 
 // Lightbulb Button
@@ -157,7 +160,10 @@ jQuery('.page-theme-lightbulb-button').on('click', function () {
     $(this).css("color", "rgba(23, 1, 23, 1)");
     })
   );
-  $(".thesis-pic svg polygon").css("fill", "rgba(23, 1, 23, 1)");
+  $(".thesis-pic svg polygon:nth-child(odd)").css("fill", "rgba(23, 1, 23, 1)");
+  $(".thesis-pic svg polygon:nth-child(even)").css("fill", "#8C001A");
+  $(".lightbox-image-wrapper svg polygon:nth-child(odd)").css("fill", "#dad4ec");
+  $(".lightbox-image-wrapper svg polygon:nth-child(even)").css("fill", "#FFFFFF");
 });
 
 
