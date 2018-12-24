@@ -20,6 +20,5 @@ None at this time.
 ## TODO
 
 ```
-1. Custom post type for thesis pic img
-2. update readme plus staging content
+1. Create child theme for futher customization
 ```
