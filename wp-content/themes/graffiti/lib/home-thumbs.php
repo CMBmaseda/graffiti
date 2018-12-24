@@ -81,7 +81,7 @@ class Thumb
 		if ( isset( $query->query_vars['post_type'] ) ) {
 			switch ( $query->query_vars['post_type'] ) {
 				case 'graffiti_thumb':
-					$query->query_vars['posts_per_page'] = -1;
+					$query->query_vars['posts_per_page'] = 12;
           $query->query_vars['meta_key'] = 'rank';
           $query->query_vars['orderby'] = 'meta_value';
           $query->query_vars['order'] = 'ASC';

@@ -710,36 +710,14 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   text-decoration: none;
   cursor: zoom-in;
 }
-.thumbs-inner ul li.custom-thumb img, .thumbs-inner ul li.custom-thumb iframe {
-	height: auto !important;
-}
 .thumbs-inner ul li img, .thumbs-inner ul li iframe {
   width: 100%;
-	height: 240px;
-	-webkit-filter: saturate(150%);
-	-moz-filter: saturate(150%);
-	filter: saturate(150%);
 }
 .thumbs-inner ul li img:hover {
 	background: none;
 	-webkit-filter: hue-rotate(330deg);
 	-moz-filter: hue-rotate(330deg);
 	filter: hue-rotate(330deg);
-  /* -webkit-animation: cssAnimation 4.5s 1 ease;
-  -moz-animation: cssAnimation 4.5s 1 ease;
-  -o-animation: cssAnimation 4.5s 1 ease;
-  }
-  @-webkit-keyframes cssAnimation {
-  from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-  to { -webkit-transform: rotate(4deg) scale(1.2) skew(3deg) translate(10px); }
-  }
-  @-moz-keyframes cssAnimation {
-  from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-  to { -moz-transform: rotate(4deg) scale(1.2) skew(3deg) translate(10px); }
-  }
-  @-o-keyframes cssAnimation {
-  from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
-  to { -o-transform: rotate(4deg) scale(1.2) skew(3deg) translate(10px); } */
 }
 .thumbs-inner ul li h4 {
   color: #f3e7e9;

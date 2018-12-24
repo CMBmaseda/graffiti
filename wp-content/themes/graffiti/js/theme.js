@@ -1,3 +1,8 @@
+/*------------------------------------------------------------------------------
+ Theme JS file for graffiti theme
+  brighten and darken the layout
+----------------------------------------------------------------------------- */
+
 // Moon Button
 jQuery('.page-theme-moon-button').on('click', function () {
   // buttons
