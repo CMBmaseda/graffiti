@@ -180,9 +180,6 @@
   .headline {
   	height: 240px;
   }
-  .headline-overlay h1 {
-    top: 20%;
-  }
 }
 
 @media screen and (max-width: 640px) {
@@ -243,9 +240,6 @@
 @media screen and (max-width: 480px) {
   .headline {
   	height: 160px;
-  }
-  .headline-overlay h1 {
-    top: 10%;
   }
 	.thesis-statement p {
 		font-size: 14px;

@@ -486,10 +486,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 }
 .headline-overlay h1 {
 	position: absolute;
-	left: 49%;
-  top: 30%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 	clear: both;
 	opacity: 1.0;
 	font-size: 60px;
