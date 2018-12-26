@@ -79,7 +79,7 @@
             <!-- Find and display the most recent posts' title + Link -->
             <?php
             // the query
-            $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5 ) );
+            $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 6 ) );
             if ( $all_posts->have_posts() ) : ?>
               <?php while ( $all_posts->have_posts() ) : $all_posts->the_post(); ?>
                  <?php
