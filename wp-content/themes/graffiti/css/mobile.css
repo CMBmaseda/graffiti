@@ -127,8 +127,8 @@
     margin: auto;
   }
   .thumbs-inner ul li {
-		width: 40%;
-    margin: 18px;
+    flex: 1 0 33.33333%;
+    max-width: calc(33.33333% - 10px);
   }
   .thumbs-inner ul li h4 {
     font-size: 15px;
@@ -189,6 +189,9 @@
   .headline-overlay h1 {
   	font-size: 18px;
   }
+  .hamburger input + label {
+		right: 30px;
+	}
 	textarea {
 	  width: 240px;
 	  height: 120px;
@@ -232,9 +235,10 @@
 		width: 420px;
 	  font-size: 15px;
 	}
-	.hamburger input + label {
-		right: 30px;
-	}
+  .thumbs-inner ul li {
+    flex: 1 0 50%;
+  	max-width: calc(50% - 6px);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -251,9 +255,9 @@
 	.content-video h2 {
 		margin-top: 10px;
 	}
-	.thumbs-inner ul li {
+	/* .thumbs-inner ul li {
 	  margin: 18px 0px !important;
-	}
+	} */
 	.content-wormholes a {
 	  font-size: 18px;
 	}

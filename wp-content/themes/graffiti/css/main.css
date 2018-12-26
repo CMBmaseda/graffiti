@@ -697,27 +697,28 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	overflow:hidden;
 	padding: 10px 0px 10px 0px;
   width: 100%;
-  max-width: 1800px;
+	max-width: 1960px;
   margin: auto;
 }
 .thumbs-inner {
   width: 80%;
-	max-width: 1800px;
+	max-width: 1960px;
 	margin: auto;
-  text-align: center;
 }
 .thumbs-inner ul {
-  list-style: none;
-  padding-left: 0;
-  /* font-size: 0; */
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -6px;
+	margin-top: -6px;
 }
 .thumbs-inner ul li {
-  text-transform: uppercase;
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20%;
-  margin: 18px 6px;
-  padding: 0px;
+	flex: 1 0 25%;
+	max-width: calc(25% - 6px);
+  box-sizing: border-box;
+  padding: 6px;
+	margin-left: 6px;
+	margin-top: 6px;
+	margin-bottom: 18px;
 }
 .thumbs-inner ul li a {
   text-decoration: none;

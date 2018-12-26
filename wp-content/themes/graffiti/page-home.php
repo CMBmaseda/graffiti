@@ -76,7 +76,7 @@
         <div class="content-wormholes content-bigscreen">
           <h2><a href="/blog">Recent Posts</a></h2>
           <ul>
-            <!-- Find and display the most recent post's image + Link -->
+            <!-- Find and display the most recent posts' title + Link -->
             <?php
             // the query
             $all_posts = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 5 ) );
