@@ -37,25 +37,22 @@
   .headline {
   	height: 510px;
   }
+  .content-wormholes {
+  	right: 6px;
+    width: 25%;
+  }
 }
 @media all and (max-width: 1440px) {
-	.content-video iframe, .content-frames iframe, .content-frames object {
-		width: 700px;
-    height: 425px;
-	}
-	.gallery-page-button a {
-		font-size: 14px;
-		width: 200px;
-		margin: 0px auto;
-		border: 1px solid #391a12;
-		color: #391a12;
-	}
   .headline {
   	height: 450px;
   }
   .headline-overlay h1 {
   	font-size: 48px;
   }
+	.content-video iframe, .content-video object, .content-frames iframe, .content-frames object {
+		width: 700px;
+    height: 425px;
+	}
 }
 
 @media screen and (max-width: 1280px) {
@@ -82,7 +79,7 @@
     float: left;
     padding: 3%;
   }
-  .content-wormholes {
+  /* .content-wormholes {
 		position: relative;
     float: left;
     width: 100%;
@@ -94,7 +91,7 @@
 	}
 	.contact .content-wormholes {
 		margin-right: 0;
-	}
+	} */
 	.content-bigscreen {
 		display: none;
 	}

@@ -621,7 +621,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 
 .content-wormholes {
 	position: absolute;
-	right: 0;
+	right: 120px;
   width: 22.5%;
 	margin-bottom: 7%;
 	text-align: center;
