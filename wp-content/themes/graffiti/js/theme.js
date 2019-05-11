@@ -4,25 +4,25 @@
 ----------------------------------------------------------------------------- */
 
 function setCookie(name,value,days) {
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime()+(days*24*60*60*1000));
-      var expires = "; expires="+date.toGMTString();
-    }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else var expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
 }
 function getCookie(key) {
   var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
   return keyValue ? keyValue[2] : null;
 }
 
-console.log(getCookie('theme'));
+console.log('Theme Color Cookie (Moon=1 , Bulb=2): ' + getCookie('theme'));
 
 // Moon Button
 $('.page-theme-moon-button').on('click', function () {
   setCookie('theme','1', '30');
-  console.log(getCookie('theme'));
+  console.log('Theme Color Cookie (Moon=1 , Bulb=2): ' + getCookie('theme'));
   // buttons
   $('.page-theme-lightbulb-button').addClass('disabled');
   $('.page-theme-moon-button').removeClass('disabled');
@@ -100,7 +100,7 @@ $('.page-theme-moon-button').on('click', function () {
 // Lightbulb Button
 $('.page-theme-lightbulb-button').on('click', function () {
   setCookie('theme','2', '30');
-  console.log(getCookie('theme'));
+  console.log('Theme Color Cookie (Moon=1 , Bulb=2): ' + getCookie('theme'));
   // buttons
   $('.page-theme-lightbulb-button').removeClass('disabled');
   $('.page-theme-moon-button').addClass('disabled');
