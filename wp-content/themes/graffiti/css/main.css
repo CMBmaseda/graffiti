@@ -861,10 +861,7 @@ a.lightbox {
 	align-items: center;
 	justify-content: center;
 }
-.dimmers ul {
-	display: block;
-	height: auto;
-}
+
 .page-theme-button {}
 .page-theme-button a {
   text-align: center;
