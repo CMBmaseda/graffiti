@@ -814,7 +814,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 .lightbox span {
   color: rgba(0,0,0,0.9);
   position: absolute;
-  top: 48px;
+  top: 56px;
   right: 48px;
   display: block;
   font-size: 30px;
