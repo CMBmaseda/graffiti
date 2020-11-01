@@ -3,7 +3,7 @@ A wordpress theme with custom post types and widgets
 
 ## System dependencies
 
-* wordpress 4.9.8
+* wordpress 5.5.3
 
 ## Configuration
 
