@@ -463,6 +463,7 @@ ul.icons li a:hover, ul.icons li .icon:hover {
 	max-width: 1960px;
 	height: 650px;
 	margin: auto;
+	margin-bottom: 30px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -511,7 +512,6 @@ ul.icons li a:hover, ul.icons li .icon:hover {
   margin: 0 auto;
 }
 .contact-content {
-	margin-top: 30px;
 	margin-right: 0;
 }
 

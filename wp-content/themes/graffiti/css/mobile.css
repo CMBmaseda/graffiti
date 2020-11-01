@@ -59,6 +59,12 @@
 	.site-header .menu-primary-container {
     font-size: 18px;
   }
+  .headline {
+  	height: 400px;
+  }
+  .headline-overlay h1 {
+  	font-size: 36px;
+  }
   .thesis {
     margin: 0 auto;
   }
@@ -98,12 +104,6 @@
 	.contact-content {
 		margin-right: 0;
 	}
-  .headline {
-  	height: 400px;
-  }
-  .headline-overlay h1 {
-  	font-size: 36px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -114,7 +114,7 @@
 	  width: 480px;
 	}
   .headline {
-  	height: 330px;
+  	height: 375px;
   }
 	.thumbs h2 {
     margin-top: 0px;
@@ -175,13 +175,13 @@
     margin: 0 auto;
   }
   .headline {
-  	height: 240px;
+  	height: 300px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .headline {
-  	height: 210px;
+  	height: 240px;
   }
   .headline-overlay h1 {
   	font-size: 18px;
@@ -240,7 +240,7 @@
 
 @media screen and (max-width: 480px) {
   .headline {
-  	height: 160px;
+  	height: 200px;
   }
 	.thesis-statement p {
 		font-size: 14px;
@@ -262,7 +262,7 @@
 
 @media screen and (max-width: 440px) {
   .headline {
-  	height: 110px;
+  	height: 160px;
   }
 	.content-video iframe, .content-frames iframe, .content-frames object {
 		width: 350px;
