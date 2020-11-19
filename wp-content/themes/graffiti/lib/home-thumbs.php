@@ -85,7 +85,7 @@ class Thumb
           $query->query_vars['meta_key'] = 'rank';
           $query->query_vars['orderby'] = 'meta_value';
           $query->query_vars['order'] = 'ASC';
-					break;
+				break;
 			}
 		}
 		return $query;
