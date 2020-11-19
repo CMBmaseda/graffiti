@@ -20,5 +20,7 @@ None at this time.
 ## TODO
 
 ```
-1. Create child theme for futher customization
+1. Global search
+2. Paginate search results and blog
+3. Create child theme for futher customization
 ```
